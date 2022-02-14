@@ -1,0 +1,16 @@
+{
+  "name": "fe",
+  "description": "Solutions to frontend mentor challenges",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "eleventy && parcel build './src/*.html' ",
+    "dev": "parcel './src/*.html'",
+    "docs:build": "eleventy",
+    "docs:dev": "eleventy --watch"
+  },
+  "devDependencies": {
+    "parcel": "^2.3.1",
+    "@11ty/eleventy": "^1.0.0"
+  },
+  "dependencies": {}
+}

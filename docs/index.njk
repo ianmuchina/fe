@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Frontend Mentor Solutions</title>
+  </head>
+  <body>
+    <style>
+      body {
+        padding: 2rem;
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: max-content;
+        justify-content: center;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(20, 20, 20);
+      }
+      article {
+        position: relative;
+        display: flex;
+        max-width: 512px;
+        border-radius: 1rem;
+        padding: 0;
+        overflow: hidden;
+      }
+      article h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+      }
+      article img {
+        width: 100%;
+      }
+      .overlay {
+        z-index: 10;
+        display: grid;
+        place-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: transparent;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-align: center;
+        font-family: monospace;
+      }
+      article:hover .overlay {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(2px);
+      }
+      .completed-false > img {
+        filter: grayscale(100%);
+      }
+    </style>
+    <h1>Frontend Mentor Solutions</h1>
+    <main>
+      {% for s in solutions %}
+        <article class="completed-{{ s.completed }}">
+          <a class="overlay" href="{{ s.dir }}/index.html">{{ s.name }}</a>
+          <img height="360" src="{{ s.dir }}/{{ s.preview }}" alt=""/>
+        </article>
+      {% endfor %}
+    </main>
+  </body>
+</html>
