@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <base href="/profile-card-component/">
+    <link rel="stylesheet" href="./styles.css" />
 
-  <title> Profile card component</title>
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body>
+    <main class="relative">
 
 
-<body>
-  Victor Crest
-  26
-  London
+      <main class=" min-h-screen bg-cyan flex ">
+        <article class="z-20 flex  m-auto bg-white flex-col min-w-sm rounded-xl overflow-hidden relative">
+          <img src="./images/bg-pattern-card.svg" class=" w-full" alt="">
+          <img src="./images/image-victor.jpg" class="-mt-12 rounded-full max-h-24 w-max mx-auto ring-4 ring-white" alt="">
 
-  80K
-  Followers
+            <h1 class="mt-5 text-center text-desaturated_blue text-xl font-bold">Victor Crest <span class="font-normal text-grayish_blue">26</span></h1>
+            <h3 class="text-center text-grayish_blue">London</h3>
+        
+            <hr class="my-6"/>
 
-  803K
-  Likes
+            <div class="text-grayish_blue flex mb-6 text-center justify-evenly">
+              <div class="flex flex-col">
+                <span class="text-desaturated_blue font-bold text-lg">80K</span>
+                <span class="tracking-wider text-sm">Followers</span>
+              </div>
+              
+              <div class="flex flex-col">
+                <span class="text-desaturated_blue font-bold text-lg">803K</span>
+                <span class="tracking-wider text-sm">Likes</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-desaturated_blue font-bold text-lg">1.4K</span>
+                <span class="tracking-wider text-sm">Photos</span>
+              </div>
+            </div>
+    </article>
 
-  1.4K
-  Photos
+    <img  class="img-1" src="./images/bg-pattern-bottom.svg" alt="">
+    <img  class="img-2" src="./images/bg-pattern-top.svg" alt="">
+      
+    </div>
+  </main>
+  <style> 
+  .img-1 {
+    position: fixed;
+    top: 50%;
+    right: -25%;
+  }
 
-</body>
+  .img-2 {
+    position: fixed;
+    top: -50%;
+    left: -25%;
+  } 
+  </style>
+
+  </body>
 </html>

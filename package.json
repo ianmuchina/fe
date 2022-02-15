@@ -9,8 +9,13 @@
     "docs:dev": "eleventy --watch"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "autoprefixer": "^10.4.2",
     "parcel": "^2.3.1",
-    "@11ty/eleventy": "^1.0.0"
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.22",
+    "sanitize.css": "^13.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }

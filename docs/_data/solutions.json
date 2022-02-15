@@ -8,7 +8,7 @@
       "desktop": "design/desktop-design.jpg",
       "mobile": "design/mobile-design.jpg"
     },
-    "completed": false
+    "completed": true
   },
   {
     "dist": "",
@@ -19,7 +19,7 @@
       "desktop": "design/desktop-design.jpg",
       "mobile": "design/mobile-design.jpg"
     },
-    "completed": false
+    "completed": true
   },
   {
     "dist": "",
@@ -30,7 +30,7 @@
       "desktop": "design/desktop-design.jpg",
       "mobile": "design/mobile-design.jpg"
     },
-    "completed": false
+    "completed": true
   },
   {
     "dist": "",
@@ -41,7 +41,7 @@
       "desktop": "design/desktop-design.jpg",
       "mobile": "design/mobile-design.jpg"
     },
-    "completed": false
+    "completed": true
   },
   {
     "dist": "",
@@ -52,7 +52,7 @@
       "desktop": "design/desktop-design.jpg",
       "mobile": "design/mobile-design.jpg"
     },
-    "completed": false
+    "completed": true
   },
   {
     "dist": "",
@@ -63,7 +63,7 @@
       "desktop": "design/desktop-design.jpg",
       "mobile": "design/mobile-design.jpg"
     },
-    "completed": false
+    "completed": true
   },
   {
     "dist": "",

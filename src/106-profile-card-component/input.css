@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:regular,400,700);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark-cyan: #19a2ae;
+    --very-dark-desaturated-blue: #2d3248;
+    --dark-grayish-blue: #6a6f81;
+    --dark-gray: #969696;
+}

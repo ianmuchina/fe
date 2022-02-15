@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:regular,400,700);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+details summary {
+    cursor: pointer;
+}
+
+details summary > * {
+    display: inline;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+details summary:after {
+    @apply text-soft-red font-normal;
+}
+
+details[open] summary {
+    @apply font-bold text-dark-blue;
+}
+
+/* Chevron Icons */
+details summary:after {
+    content: url("./images/icon-arrow-down.svg");
+    transform: rotate(0deg);
+}
+
+details[open] summary::after {
+    content: url("./images/icon-arrow-down.svg");
+    transform: rotate(180deg);
+}
+
+p {
+    padding: 1rem 0;
+}
+
+.img {
+    background-repeat: no-repeat;
+    background-position: center left -72px;
+    background-size: 90%;
+    background-image: url("./images/illustration-woman-online-desktop.svg");
+}
+
+.img-2 {
+    background-image: url("./images/bg-pattern-desktop.svg");
+}

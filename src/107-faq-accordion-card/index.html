@@ -1,30 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta
+      charset
+      <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
 
-  <title> FAQ Accordion Card</title>
+    <base href="/faq-accordion-card/" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>FAQ Accordion Card</title>
+  </head>
+  <body
+    class="to-soft-blue from-soft-violet bg-gradient-to-b min-h-screen flex"
+  >
+    <!-- Card -->
+    <div
+      style="margin-top: 30vh"
+      class="bg-white rounded-xl shadow-2xl shadow-dark-blue/50 grid grid-cols-2 h-max mx-auto"
+    >
+      <!-- Images -->
 
+      <div class="relative overflow-hidden">
+        <!-- Background Pattern -->
+        <img
+          class="absolute top-0 left-0"
+          src="./images/bg-pattern-desktop.svg"
+          alt=""
+        />
+        <!-- Illustration Desktop -->
+        <img
+          class="absolute top-16 -left-16"
+          src="./images/illustration-woman-online-desktop.svg"
+          alt=""
+        />
+      </div>
+      <!-- Content -->
+      <div class="py-12 px-12 flex flex-col text-text-2">
+        <h1 class="text-3xl font-bold text-center md:text-left text-dark-blue">
+          FAQ
+        </h1>
 
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+        <div class="w-96"></div>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        <details class="border-b border-b-gray-300 py-4 text-base">
+          <summary class="flex justify-between list-none hover:text-soft-red">
+            How many team members can I invite?
+          </summary>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+          <p class="text-sm max-w-sm text-text-2">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </details>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <details open class="border-b border-b-gray-300 py-4 text-base">
+          <summary class="flex justify-between list-none hover:text-soft-red">
+            What is the maximum file upload size?
+          </summary>
+          <p class="text-sm max-w-sm text-text-2">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </details>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <details class="border-b border-b-gray-300 py-4 text-base">
+          <summary class="flex justify-between list-none hover:text-soft-red">
+            How do I reset my password?
+          </summary>
+          <p class="text-sm max-w-sm text-text-2">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </details>
 
+        <details class="border-b border-b-gray-300 py-4 text-base">
+          <summary class="flex justify-between list-none hover:text-soft-red">
+            Can I cancel my subscription?
+          </summary>
+          <p class="text-sm max-w-sm text-text-2">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </details>
 
-</body>
+        <details class="border-b border-b-gray-300 py-4 text-base">
+          <summary class="flex justify-between list-none hover:text-soft-red">
+            Do you provide additional support?
+          </summary>
+          <p class="text-sm max-w-sm text-text-2">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </details>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Fetch all the details element.
+    const details = document.querySelectorAll("details");
+
+    // Add the onclick listeners.
+    details.forEach((targetDetail) => {
+      targetDetail.addEventListener("click", () => {
+        // Close all the details that are not targetDetail.
+        details.forEach((detail) => {
+          if (detail !== targetDetail) {
+            detail.removeAttribute("open");
+          }
+        });
+      });
+    });
+  </script>
 </html>
