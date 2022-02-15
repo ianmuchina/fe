@@ -2,16 +2,15 @@
 
 Solutions to frontend mentor challenges
 
-## Setup
-
-I am using parcel to make using extra languages/frameworks easier .
-
 ```sh
 # Get Dependencies
 yarn install
+
 # Local dev
 yarn dev
-# Building
+
+# Build site
+yarn eleventy
 yarn build
 ```
 
