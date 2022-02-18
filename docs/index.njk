@@ -4,6 +4,9 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+      name="description"
+      content="Directory of solutions to frontend mentor challenges">
     <title>Frontend Mentor Solutions</title>
   </head>
   <body>
@@ -37,9 +40,7 @@
         text-align: center;
         font-size: 1rem;
       }
-      article img {
-        width: 100%;
-      }
+      article img {}
       .overlay {
         z-index: 10;
         display: grid;
@@ -71,7 +72,7 @@
       {% for s in solutions %}
         <article class="completed-{{ s.completed }}">
           <a class="overlay" href="{{ s.dir }}/index.html">{{ s.name }}</a>
-          <img height="360" src="{{ s.dir }}/{{ s.preview }}" alt=""/>
+          <img loading="{{ s.loading }}" height="360" width="640" src="{{ s.dir }}/{{ s.preview }}?width=720&as=webp" alt=""/>
         </article>
       {% endfor %}
     </main>

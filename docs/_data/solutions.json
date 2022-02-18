@@ -3,6 +3,7 @@
     "dist": "",
     "dir": "101-qr-code-component",
     "name": "qr code component",
+    "loading": "eager",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -14,6 +15,7 @@
     "dist": "",
     "dir": "102-nft-preview-card-component",
     "name": "nft preview card component",
+    "loading": "eager",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -25,6 +27,7 @@
     "dist": "",
     "dir": "103-order-summary-component",
     "name": "order summary component",
+    "loading": "eager",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -36,6 +39,7 @@
     "dist": "",
     "dir": "104-stats-preview-card-component",
     "name": "stats preview card component",
+    "loading": "eager",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -47,6 +51,7 @@
     "dist": "",
     "dir": "105-3-column-preview-card-component",
     "name": "3 column preview card component",
+    "loading": "eager",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -58,6 +63,7 @@
     "dist": "",
     "dir": "106-profile-card-component",
     "name": "profile card component",
+    "loading": "eager",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -69,6 +75,7 @@
     "dist": "",
     "dir": "107-faq-accordion-card",
     "name": "faq accordion card",
+    "loading": "eager",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -80,6 +87,7 @@
     "dist": "",
     "dir": "108-social-proof-section",
     "name": "social proof section",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -91,6 +99,7 @@
     "dist": "",
     "dir": "109-article-preview-component",
     "name": "article preview component",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -102,6 +111,7 @@
     "dist": "",
     "dir": "110-four-card-feature-section",
     "name": "four card feature section",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -113,6 +123,7 @@
     "dist": "",
     "dir": "111-base-apparel-coming-soon",
     "name": "base apparel coming soon",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -124,6 +135,7 @@
     "dist": "",
     "dir": "112-intro-component-with-signup-form",
     "name": "intro component with signup form",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -135,6 +147,7 @@
     "dist": "",
     "dir": "113-single-price-grid-component",
     "name": "single price grid component",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -146,6 +159,7 @@
     "dist": "",
     "dir": "114-ping-coming-soon-page",
     "name": "ping coming soon page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -157,6 +171,7 @@
     "dist": "",
     "dir": "115-huddle-landing-page-with-single-introductory-section",
     "name": "huddle landing page with single introductory section",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -168,6 +183,7 @@
     "dist": "",
     "dir": "201-time-tracking-dashboard",
     "name": "time tracking dashboard",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -179,6 +195,7 @@
     "dist": "",
     "dir": "202-tip-calculator-app",
     "name": "tip calculator app",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -190,6 +207,7 @@
     "dist": "",
     "dir": "203-sunnyside-agency-landing-page",
     "name": "sunnyside agency landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -201,6 +219,7 @@
     "dist": "",
     "dir": "204-blogr-landing-page",
     "name": "blogr landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -212,6 +231,7 @@
     "dist": "",
     "dir": "205-crowdfunding-product-page",
     "name": "crowdfunding product page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -223,6 +243,7 @@
     "dist": "",
     "dir": "206-interactive-pricing-component",
     "name": "interactive pricing component",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -234,6 +255,7 @@
     "dist": "",
     "dir": "207-loopstudios-landing-page",
     "name": "loopstudios landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -245,6 +267,7 @@
     "dist": "",
     "dir": "208-testimonials-grid-section",
     "name": "testimonials grid section",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -256,6 +279,7 @@
     "dist": "",
     "dir": "209-fylo-data-storage-component",
     "name": "fylo data storage component",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -267,6 +291,7 @@
     "dist": "",
     "dir": "200-coding-bootcamp-testimonials-slider",
     "name": "coding bootcamp testimonials slider",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -278,6 +303,7 @@
     "dist": "",
     "dir": "211-social-media-dashboard-with-theme-switcher",
     "name": "social media dashboard with theme switcher",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -289,6 +315,7 @@
     "dist": "",
     "dir": "212-insure-landing-page",
     "name": "insure landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -300,6 +327,7 @@
     "dist": "",
     "dir": "213-pricing-component-with-toggle",
     "name": "pricing component with toggle",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -311,6 +339,7 @@
     "dist": "",
     "dir": "214-project-tracking-intro-component",
     "name": "project tracking intro component",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -322,6 +351,7 @@
     "dist": "",
     "dir": "215-clipboard-landing-page",
     "name": "clipboard landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -333,6 +363,7 @@
     "dist": "",
     "dir": "216-huddle-landing-page-with-alternating-feature-blocks",
     "name": "huddle landing page with alternating feature blocks",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -344,6 +375,7 @@
     "dist": "",
     "dir": "217-fylo-dark-theme-landing-page",
     "name": "fylo dark theme landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -355,6 +387,7 @@
     "dist": "",
     "dir": "218-fylo-landing-page-with-two-column-layout",
     "name": "fylo landing page with two column layout",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -366,6 +399,7 @@
     "dist": "",
     "dir": "219-huddle-landing-page-with-curved-sections",
     "name": "huddle landing page with curved sections",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -377,6 +411,7 @@
     "dist": "",
     "dir": "301-interactive-comments-section",
     "name": "interactive comments section",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -388,6 +423,7 @@
     "dist": "",
     "dir": "302-ecommerce-product-page",
     "name": "ecommerce product page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -399,6 +435,7 @@
     "dist": "",
     "dir": "303-calculator-app",
     "name": "calculator app",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -410,6 +447,7 @@
     "dist": "",
     "dir": "304-launch-countdown-timer",
     "name": "launch countdown timer",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -421,6 +459,7 @@
     "dist": "",
     "dir": "305-todo-app",
     "name": "todo app",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -432,6 +471,7 @@
     "dist": "",
     "dir": "306-room-homepage",
     "name": "room homepage",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -443,6 +483,7 @@
     "dist": "",
     "dir": "307-ip-address-tracker",
     "name": "ip address tracker",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -454,6 +495,7 @@
     "dist": "",
     "dir": "308-chat-app-css-illustration",
     "name": "chat app css illustration",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -465,6 +507,7 @@
     "dist": "",
     "dir": "309-static-job-listings",
     "name": "static job listings",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -476,6 +519,7 @@
     "dist": "",
     "dir": "300-easybank-landing-page",
     "name": "easybank landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -487,6 +531,7 @@
     "dist": "",
     "dir": "311-manage-landing-page",
     "name": "manage landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -498,6 +543,7 @@
     "dist": "",
     "dir": "312-url-shortening-api",
     "name": "url shortening api",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -509,6 +555,7 @@
     "dist": "",
     "dir": "313-bookmark-landing-page",
     "name": "bookmark landing page",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -520,6 +567,7 @@
     "dist": "",
     "dir": "314-rock-paper-scissors",
     "name": "rock paper scissors",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -531,6 +579,7 @@
     "dist": "",
     "dir": "315-rest-countries-api-with-color-theme-switcher",
     "name": "rest countries api with color theme switcher",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",
@@ -542,6 +591,7 @@
     "dist": "",
     "dir": "316-space-tourism-website",
     "name": "space tourism website",
+    "loading": "lazy",
     "preview": "design/desktop-preview.jpg",
     "design": {
       "desktop": "design/desktop-design.jpg",

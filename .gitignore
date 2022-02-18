@@ -2,3 +2,5 @@ dist/
 node_modules/
 .parcel-cache
 src/index.html
+.lighthouseci
+.lhci
