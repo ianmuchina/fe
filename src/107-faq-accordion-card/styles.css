@@ -1,5 +1,5 @@
 /* Remote Font */
-@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:regular,400,600);
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:regular,400,700);
 @import url(./sanitize.css);
 
 /* Resets */
@@ -17,13 +17,13 @@ h1, h2, p {
     --text-1:  #4a4b5e;
     --text-2:  #787887;
     --dividers:  #e7e7e9;
-    --kumbh: '"Kumbh Sans"', 'sans';
+    --kumbh: , 'sans';
 
 }
 
 html {
     font-size: 16px;
-    font-family: var(--kumbh);
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 body {
@@ -147,17 +147,20 @@ body {
 }
 
 h1 {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--dark-blue);
     font-size: 32px;
 }
 
-
+summary, summary:focus, summary::-webkit-details-marker {
+    list-style-image: none;
+}
 .accordion {
     border-bottom: solid 1px var(--dividers);
     padding-bottom: 1rem;
-    font-size: 12px;
+    font-size: 14px;
     max-width: 340px;
+    color: var(--text-2);
 }
 /* Accordion */
 .accordion summary {
