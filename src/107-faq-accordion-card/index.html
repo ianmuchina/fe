@@ -1,96 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta
-      charset
-      <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <!-- displays site properly based on user's device -->
-
-    <base href="/faq-accordion-card/" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Reset -->
     <link rel="stylesheet" href="./styles.css" />
+
     <title>FAQ Accordion Card</title>
   </head>
-  <body
-    class="to-soft-blue from-soft-violet bg-gradient-to-b min-h-screen flex"
-  >
-    <!-- Card -->
-    <div
-      style="margin-top: 30vh"
-      class="bg-white rounded-xl shadow-2xl shadow-dark-blue/50 grid grid-cols-2 h-max mx-auto"
-    >
-      <!-- Images -->
+  <body>
+    <div class="card">
+      <div class="box_icon">
+        <img src="./images/illustration-box-desktop.svg" alt="" />
+      </div>
+      <div class="card__thumbnail">
+        <div class="img_desktop">
+          <img src="./images/illustration-woman-online-desktop.svg" alt="" />
+        </div>
 
-      <div class="relative overflow-hidden">
-        <!-- Background Pattern -->
         <img
-          class="absolute top-0 left-0"
-          src="./images/bg-pattern-desktop.svg"
-          alt=""
-        />
-        <!-- Illustration Desktop -->
-        <img
-          class="absolute top-16 -left-16"
-          src="./images/illustration-woman-online-desktop.svg"
+          width="200px"
+          class="img_mobile"
+          src="./images/illustration-woman-online-mobile.svg"
           alt=""
         />
       </div>
-      <!-- Content -->
-      <div class="py-12 px-12 flex flex-col text-text-2">
-        <h1 class="text-3xl font-bold text-center md:text-left text-dark-blue">
-          FAQ
-        </h1>
+      <div class="card__content">
+        <h1>FAQ</h1>
 
-        <div class="w-96"></div>
-
-        <details class="border-b border-b-gray-300 py-4 text-base">
-          <summary class="flex justify-between list-none hover:text-soft-red">
-            How many team members can I invite?
+        <details class="accordion">
+          <summary>
+            <h2>How many team members can I invite?</h2>
           </summary>
-
-          <p class="text-sm max-w-sm text-text-2">
+          <p>
             You can invite up to 2 additional users on the Free plan. There is
             no limit on team members for the Premium plan.
           </p>
         </details>
 
-        <details open class="border-b border-b-gray-300 py-4 text-base">
-          <summary class="flex justify-between list-none hover:text-soft-red">
-            What is the maximum file upload size?
+        <details open class="accordion">
+          <summary>
+            <h2>What is the maximum file upload size?</h2>
           </summary>
-          <p class="text-sm max-w-sm text-text-2">
+          <p>
             No more than 2GB. All files in your account must fit your allotted
             storage space.
           </p>
         </details>
 
-        <details class="border-b border-b-gray-300 py-4 text-base">
-          <summary class="flex justify-between list-none hover:text-soft-red">
-            How do I reset my password?
+        <details class="accordion">
+          <summary>
+            <h2>How do I reset my password?</h2>
           </summary>
-          <p class="text-sm max-w-sm text-text-2">
+          <p>
             Click “Forgot password” from the login page or “Change password”
             from your profile page. A reset link will be emailed to you.
           </p>
         </details>
 
-        <details class="border-b border-b-gray-300 py-4 text-base">
-          <summary class="flex justify-between list-none hover:text-soft-red">
-            Can I cancel my subscription?
+        <details class="accordion">
+          <summary>
+            <h2>Can I cancel my subscription?</h2>
           </summary>
-          <p class="text-sm max-w-sm text-text-2">
+          <p>
             Yes! Send us a message and we’ll process your request no questions
             asked.
           </p>
         </details>
 
-        <details class="border-b border-b-gray-300 py-4 text-base">
-          <summary class="flex justify-between list-none hover:text-soft-red">
-            Do you provide additional support?
+        <details class="accordion">
+          <summary>
+            <h2>Do you provide additional support?</h2>
           </summary>
-          <p class="text-sm max-w-sm text-text-2">
+          <p>
             Chat and email support is available 24/7. Phone lines are open
             during normal business hours.
           </p>
@@ -98,20 +80,4 @@
       </div>
     </div>
   </body>
-  <script>
-    // Fetch all the details element.
-    const details = document.querySelectorAll("details");
-
-    // Add the onclick listeners.
-    details.forEach((targetDetail) => {
-      targetDetail.addEventListener("click", () => {
-        // Close all the details that are not targetDetail.
-        details.forEach((detail) => {
-          if (detail !== targetDetail) {
-            detail.removeAttribute("open");
-          }
-        });
-      });
-    });
-  </script>
 </html>

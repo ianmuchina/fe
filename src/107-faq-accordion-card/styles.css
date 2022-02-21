@@ -1,51 +1,203 @@
-@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:regular,400,700);
+/* Remote Font */
+@import url(https://fonts.googleapis.com/css?family=Kumbh+Sans:regular,400,600);
+@import url(./sanitize.css);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Resets */
+h1, h2, p {
+    font-size: unset;
+    margin: 0;
+    padding: 0;
+}
+/* Color Variables */
+:root {
+    --dark-blue:  #1d1e35;
+    --soft-red:  #f47c57;
+    --soft-violet:  #af67e9;
+    --soft-blue:  #6565e7;
+    --text-1:  #4a4b5e;
+    --text-2:  #787887;
+    --dividers:  #e7e7e9;
+    --kumbh: '"Kumbh Sans"', 'sans';
 
-details summary {
+}
+
+html {
+    font-size: 16px;
+    font-family: var(--kumbh);
+}
+
+body {
+    /* Center Card on Page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    padding: 1rem;
+
+    /* Background Gradient */
+    background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+}
+
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    /* Hide mobile images */
+    .img_mobile  {display: none;}
+    .img_desktop {width: 100%;}
+    
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 910px;
+        min-width: 760px;
+    }
+
+    .card__thumbnail {
+        overflow: hidden;
+        /* image source */
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-position: 104% 60%;
+        background-repeat: no-repeat;
+        position: relative;
+       
+        /* Center */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.img_desktop {
+    position: absolute;
+    left: -6rem;
+}
+
+.img_mobile {
+    position: absolute;
+    top: -10ch;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .card__content {
+        padding: 2rem 1rem;
+    }
+    .img_desktop, .box_icon {
+        display: none;
+        visibility: hidden;
+    }
+    /* Center the Title on mobile */
+    .card__content > h1 {
+        text-align: center;
+    }
+    
+    .card__content {
+        font-size: .875rem;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .card__thumbnail {
+        position: relative;
+        background-position: center -1rem;
+        background-image: url(./images/bg-pattern-mobile.svg);
+        display: flex;
+        justify-content: center;
+    }
+    .card__thumbnail > .mobile_img {
+        position: absolute;
+        max-width: 24ch;
+        top: -8rem;
+    }
+}
+
+
+.card {
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+}
+
+.box_icon {
+    display: grid;
+    place-items: center;
+    z-index: 20;
+    position: absolute;
+    height: 100%;
+}
+
+.box_icon img {
+    width: 180px;
+    margin-top: 6rem;
+    margin-left: -5rem;
+
+}
+.card__thumbnail {
+    min-height: 100px;
+}
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 1rem;
+    color: var(--text-1);
+}
+
+h1 {
+    font-weight: 600;
+    color: var(--dark-blue);
+    font-size: 32px;
+}
+
+
+.accordion {
+    border-bottom: solid 1px var(--dividers);
+    padding-bottom: 1rem;
+    font-size: 12px;
+    max-width: 340px;
+}
+/* Accordion */
+.accordion summary {
+    color: var(--text-1);
+    display: flex;
+    padding: 6px 0;
+    justify-content: space-between;
     cursor: pointer;
 }
-
-details summary > * {
-    display: inline;
+.accordion > summary > h2:hover {
+    color: #f47c57;
 }
 
-details summary {
-    cursor: pointer;
+.accordion > summary > h2 {
+    font-weight: 400;
+}
+.accordion[open] > summary > h2 {
+    color: var(--dark-blue);
+    font-weight: 700;
 }
 
-details summary:after {
-    @apply text-soft-red font-normal;
-}
+/* Debug */
 
-details[open] summary {
-    @apply font-bold text-dark-blue;
-}
+/* .card * {
+    outline: solid 1px #1d1e3569;
+} */
 
-/* Chevron Icons */
-details summary:after {
+/* Collapsed */
+.accordion > summary:after {
+    /* Center the icon */
+    display: flex;
+    align-items: center;
+
+    color: var(--soft-red);
     content: url("./images/icon-arrow-down.svg");
-    transform: rotate(0deg);
 }
 
-details[open] summary::after {
-    content: url("./images/icon-arrow-down.svg");
+/* Expaded */
+.accordion[open] > summary::after {
     transform: rotate(180deg);
 }
 
-p {
-    padding: 1rem 0;
-}
-
-.img {
-    background-repeat: no-repeat;
-    background-position: center left -72px;
-    background-size: 90%;
-    background-image: url("./images/illustration-woman-online-desktop.svg");
-}
-
-.img-2 {
-    background-image: url("./images/bg-pattern-desktop.svg");
-}
+/* Util Classes */

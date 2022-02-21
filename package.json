@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "eleventy && parcel build './src/*.html' ",
-    "dev": "parcel './src/*.html'",
+    "dev": "eleventy && parcel './src/*.html'",
     "clean": "rm dist/* -fr && rm .lhci/* -fr",
     "test": "lhci autorun",
     "docs:build": "eleventy",
@@ -18,7 +18,13 @@
     "postcss": "^8.4.6",
     "sanitize.css": "^13.0.0",
     "sharp": "^0.29.1",
-    "tailwindcss": "^3.0.22"
+    "tailwindcss": "^3.0.23",
+    "postcss-cli": "^9.1.0"
   },
-  "dependencies": {}
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  }
 }
