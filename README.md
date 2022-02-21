@@ -3,14 +3,11 @@
 Solutions to frontend mentor challenges
 
 ```sh
-# Get Dependencies
+# Dependencies
 yarn install
-
-# Local dev
+# Local Development
 yarn dev
-
-# Build site
-yarn eleventy
+# Build
 yarn build
 ```
 
@@ -18,13 +15,13 @@ yarn build
 
 ### Newbie
 
-- [ ] [qr-code-component](./src/101-qr-code-component)
-- [ ] [nft-preview-card-component](./src/102-nft-preview-card-component)
-- [ ] [order-summary-component](./src/103-order-summary-component)
-- [ ] [stats-preview-card-component](./src/104-stats-preview-card-component)
-- [ ] [3-column-preview-card-component](./src/105-3-column-preview-card-component)
-- [ ] [profile-card-component](./src/106-profile-card-component)
-- [ ] [faq-accordion-card](./src/107-faq-accordion-card)
+- [x] [qr-code-component](./src/101-qr-code-component)
+- [x] [nft-preview-card-component](./src/102-nft-preview-card-component)
+- [x] [order-summary-component](./src/103-order-summary-component)
+- [x] [stats-preview-card-component](./src/104-stats-preview-card-component)
+- [x] [3-column-preview-card-component](./src/105-3-column-preview-card-component)
+- [x] [profile-card-component](./src/106-profile-card-component)
+- [x] [faq-accordion-card](./src/107-faq-accordion-card)
 - [ ] [social-proof-section](./src/108-social-proof-section)
 - [ ] [article-preview-component](./src/109-article-preview-component)
 - [ ] [four-card-feature-section](./src/110-four-card-feature-section)
