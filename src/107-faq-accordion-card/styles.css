@@ -152,7 +152,16 @@ h1 {
     font-size: 32px;
 }
 
-summary, summary:focus, summary::-webkit-details-marker {
+/* remove details marker on webkit */
+::-webkit-details-marker {
+    display: none;
+}
+/* remove outline */
+summary:focus {
+    outline: none;  
+}
+
+summary, summary:focus {
     list-style-image: none;
 }
 .accordion {
