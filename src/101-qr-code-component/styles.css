@@ -1,0 +1,41 @@
+/* Fonts */
+@import "/node_modules/@fontsource/outfit/variable.css";
+
+:root {
+  --white: #ffffff;
+  --light-gray: #d6e2f0;
+  --grayish-blue: #7b879d;
+  --dark-blue: #1f3251;
+}
+
+body {
+  font-family: "OutfitVariable";
+  background-color: var(--light-gray);
+
+  /* Vertically center */
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  margin: auto;
+  max-width: 300px;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+article > h1 {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+article > a > img {
+  border-radius: 8px;
+}
+article > p {
+  color: var(--grayish-blue);
+  font-size: 15px;
+}

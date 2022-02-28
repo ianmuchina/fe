@@ -4,56 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR code component</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <style>
-      :root {
-        @import url(https://fonts.googleapis.com/css?family=Outfit:400,700);
-        --white: #ffffff;
-        --light-gray: #d6e2f0;
-        --grayish-blue: #7b879d;
-        --dark-blue: #1f3251;
-      }
-
-      body {
-        font-family: "Outfit";
-        background-color: var(--light-gray);
-
-        /* Vertically center */
-        display: flex;
-        height: 90vh;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      article {
-        margin: auto;
-        max-width: 300px;
-        text-align: center;
-        background-color: var(--white);
-        border-radius: 1rem;
-        padding: 1rem;
-      }
-      article > h1 {
-        color: var(--dark-blue);
-        font-weight: 700;
-      }
-
-      article > a > img {
-        border-radius: 8px;
-      }
-      article > p {
-        color: var(--grayish-blue);
-        font-size: 15px;
-      }
-    </style>
     <article>
       <a href="http://frontendmentor.io" rel="noopener noreferrer">
         <img
-          src="./images/image-qr-code.png"
           width="300"
           height="300"
-          alt="Image of QR Code"
+          src="./images/image-qr-code.png"
+          alt="QR Code"
         />
       </a>
       <h1>Improve your front-end skills by building projects</h1>

@@ -1,115 +1,116 @@
 /* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:regular,400);
-@import url(https://fonts.googleapis.com/css?family=Big+Shoulders+Display:700);
+@import url("/node_modules/@fontsource/lexend-deca/400.css");
+@import url("/node_modules/@fontsource/big-shoulders-display/700.css");
+
 /* Colors */
 :root {
-    font-size: 15px;
-    /* Primary */
-    --bright-orange: hsl(31, 77%, 52%);
-    --dark-cyan: hsl(184, 100%, 22%);
-    --very-dark-cyan: hsl(179, 100%, 13%);
-    /* Paragraphs */
-    --transparent-white: hsla(0, 0%, 100%, 0.75);
-    /* Background, headings, buttons */
-    --very-light-gray: hsl(0, 0%, 95%);
+  font-size: 15px;
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* Background, headings, buttons */
+  --very-light-gray: hsl(0, 0%, 95%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: "Lexend Deca", sans-serif;
-    color: var(--very-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--very-light-gray);
 }
 .bg-orange {
-    background-color: var(--bright-orange);
+  background-color: var(--bright-orange);
 }
 
 .bg-dark-cyan {
-    background-color: var(--dark-cyan);
+  background-color: var(--dark-cyan);
 }
 .bg-very-dark-cyan {
-    background-color: var(--very-dark-cyan);
+  background-color: var(--very-dark-cyan);
 }
 
 .color-orange {
-    color: var(--bright-orange);
+  color: var(--bright-orange);
 }
 
 .color-dark-cyan {
-    color: var(--dark-cyan);
+  color: var(--dark-cyan);
 }
 .color-very-dark-cyan {
-    color: var(--very-dark-cyan);
+  color: var(--very-dark-cyan);
 }
 
 .container {
-    margin: auto;
-    border-radius: 8px;
-    overflow: hidden;
-    max-width: max-content;
-    display: flex;
-    flex-direction: row;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: max-content;
+  display: flex;
+  flex-direction: row;
 }
 
 .card {
-    display: grid;
-    min-height: 360px;
-    max-width: 250px;
-    gap: 2rem;
-    grid-template-rows: max-content max-content auto max-content;
-    flex-direction: column;
-    padding: 2rem;
+  display: grid;
+  min-height: 360px;
+  max-width: 250px;
+  gap: 2rem;
+  grid-template-rows: max-content max-content auto max-content;
+  flex-direction: column;
+  padding: 2rem;
 }
 
 img {
-    width: max-content;
-    height: max-content;
+  width: max-content;
+  height: max-content;
 }
 
 h2 {
-    font-size: 32px;
-    text-transform: uppercase;
-    font-family: "Big Shoulders Display", cursive;
-    font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
 }
 
 a,
 a:visited,
 a:hover {
-    color: unset;
-    text-decoration: none;
+  color: unset;
+  text-decoration: none;
 }
 
 .card > a {
-    background-color: var(--very-light-gray);
-    padding: 10px 18px;
-    border-radius: 5rem;
-    width: max-content;
-    box-sizing: content-box;
-    border: solid 2px var(--transparent-white);
+  background-color: var(--very-light-gray);
+  padding: 10px 18px;
+  border-radius: 5rem;
+  width: max-content;
+  box-sizing: content-box;
+  border: solid 2px var(--transparent-white);
 }
 
 .card > a:hover {
-    color: white;
-    background-color: transparent;
+  color: white;
+  background-color: transparent;
 }
 
 p {
-    font-family: "Lexend Deca", sans-serif;
-    color: var(--transparent-white);
-    max-width: 200px;
-    line-height: 1.6rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  max-width: 200px;
+  line-height: 1.6rem;
 }
 
 @media (max-width: 720px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 }

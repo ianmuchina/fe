@@ -6,9 +6,9 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                inter: ['"Inter"', 'serif'],
-                lexend: ['Lexend Deca', 'serif'],
-                kumbh: ['Kumbh Sans', 'serif']
+                inter: ['"InterVariable"', 'serif'],
+                lexend: ['Lexend DecaVariable', 'serif'],
+                kumbh: ['Kumbh SansVariable', 'serif']
             },
         },
 
@@ -27,6 +27,13 @@ module.exports = {
                 900: "#090b1a",
                 800: "#1b1938",
                 purple: "#aa5cdb",
+            },
+            // Profile Card Component
+            "106": {
+                "cyan": "#19a2ae",
+                "desaturated_blue": "#2d3248",
+                "grayish_blue": "#6a6f81",
+                "gray": "#969696",
             },
             // FAQ Accordion Card
             "107": {
