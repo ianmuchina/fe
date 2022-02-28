@@ -16,11 +16,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@parcel/config-default": "^2.3.2",
+    "@parcel/core": "^2.3.2",
     "autoprefixer": "^10.4.2",
     "parcel": "^2.3.2",
     "postcss": "^8.4.7",
     "sanitize.css": "^13.0.0",
-    "sharp": "^0.30.1",
+    "sharp": "^0.29.3",
     "tailwindcss": "^3.0.23"
   },
   "postcss": {
