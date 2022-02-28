@@ -10,21 +10,56 @@
     "docs:build": "eleventy",
     "docs:dev": "eleventy --watch"
   },
+  "optionalDependencies": {
+    "@lhci/cli": "^0.9.0",
+    "postcss-cli": "^9.1.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@lhci/cli": "^0.9.0",
     "autoprefixer": "^10.4.2",
-    "parcel": "^2.3.1",
-    "postcss": "^8.4.6",
+    "parcel": "^2.3.2",
+    "postcss": "^8.4.7",
     "sanitize.css": "^13.0.0",
-    "sharp": "^0.29.1",
-    "tailwindcss": "^3.0.23",
-    "postcss-cli": "^9.1.0"
+    "sharp": "^0.30.1",
+    "tailwindcss": "^3.0.23"
   },
   "postcss": {
     "plugins": {
       "tailwindcss": {},
       "autoprefixer": {}
     }
+  },
+  "dependencies": {
+    "@fontsource/alata": "^4.5.2",
+    "@fontsource/bai-jamjuree": "^4.5.2",
+    "@fontsource/barlow": "^4.5.2",
+    "@fontsource/barlow-condensed": "^4.5.2",
+    "@fontsource/barlow-semi-condensed": "^4.5.3",
+    "@fontsource/be-vietnam": "^4.5.0",
+    "@fontsource/big-shoulders-display": "^4.5.4",
+    "@fontsource/commissioner": "^4.5.3",
+    "@fontsource/dm-serif-display": "^4.5.2",
+    "@fontsource/fraunces": "^4.5.2",
+    "@fontsource/inter": "^4.5.4",
+    "@fontsource/josefin-sans": "^4.5.4",
+    "@fontsource/karla": "^4.5.3",
+    "@fontsource/kumbh-sans": "^4.5.4",
+    "@fontsource/lexend-deca": "^4.5.5",
+    "@fontsource/libre-franklin": "^4.5.3",
+    "@fontsource/manrope": "^4.5.4",
+    "@fontsource/montserrat": "^4.5.5",
+    "@fontsource/nunito-sans": "^4.5.3",
+    "@fontsource/open-sans": "^4.5.5",
+    "@fontsource/outfit": "^4.5.4",
+    "@fontsource/overpass": "^4.5.4",
+    "@fontsource/poppins": "^4.5.2",
+    "@fontsource/public-sans": "^4.5.3",
+    "@fontsource/raleway": "^4.5.3",
+    "@fontsource/red-hat-display": "^4.5.4",
+    "@fontsource/red-hat-text": "^4.5.4",
+    "@fontsource/rubik": "^4.5.3",
+    "@fontsource/space-mono": "^4.5.2",
+    "@fontsource/spartan": "^4.5.4",
+    "@fontsource/ubuntu": "^4.5.3"
   }
 }
