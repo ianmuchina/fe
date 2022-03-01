@@ -22,7 +22,7 @@ yarn build
 - [x] [3-column-preview-card-component](./src/105-3-column-preview-card-component)
 - [x] [profile-card-component](./src/106-profile-card-component)
 - [x] [faq-accordion-card](./src/107-faq-accordion-card)
-- [ ] [social-proof-section](./src/108-social-proof-section)
+- [X] [social-proof-section](./src/108-social-proof-section)
 - [ ] [article-preview-component](./src/109-article-preview-component)
 - [ ] [four-card-feature-section](./src/110-four-card-feature-section)
 - [ ] [base-apparel-coming-soon](./src/111-base-apparel-coming-soon)
