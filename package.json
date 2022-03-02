@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "eleventy && parcel build './src/*.html' ",
-    "dev": "eleventy && parcel './src/*.html' && parcel watch parcel './src/*.html' ",
+    "dev": "eleventy && parcel './src/*.html' && parcel watch './src/*.html'",
     "clean": "rm dist/* -fr && rm .lhci/* -fr",
     "test": "lhci autorun",
     "docs:build": "eleventy",
