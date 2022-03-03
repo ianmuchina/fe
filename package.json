@@ -3,12 +3,15 @@
   "description": "Solutions to frontend mentor challenges",
   "version": "0.0.1",
   "scripts": {
+    "fmt:check": "npx prettier --check .",
+    "fmt": "pretty-quick",
     "build": "eleventy && parcel build './src/*.html' ",
     "dev": "eleventy && parcel './src/*.html' && parcel watch './src/*.html'",
     "clean": "rm dist/* -fr && rm .lhci/* -fr",
     "test": "lhci autorun",
     "docs:build": "eleventy",
-    "docs:dev": "eleventy --watch"
+    "docs:dev": "eleventy --watch",
+    "prepare": "husky install"
   },
   "optionalDependencies": {
     "@lhci/cli": "^0.9.0",
@@ -19,8 +22,14 @@
     "@parcel/config-default": "^2.3.2",
     "@parcel/core": "^2.3.2",
     "autoprefixer": "^10.4.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
     "parcel": "^2.3.2",
     "postcss": "^8.4.7",
+    "prettier": "2.5.1",
+    "prettier-plugin-sh": "^0.8.1",
+    "prettier-plugin-tailwindcss": "^0.1.8",
+    "pretty-quick": "^3.1.3",
     "sanitize.css": "^13.0.0",
     "sharp": "^0.29.3",
     "tailwindcss": "^3.0.23"
@@ -29,6 +38,17 @@
     "plugins": {
       "tailwindcss": {},
       "autoprefixer": {}
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "parcel": {
+    "extends": "@parcel/config-default",
+    "optimizers": {
+      "*.{jpg,jpeg,png}": []
     }
   },
   "dependencies": {

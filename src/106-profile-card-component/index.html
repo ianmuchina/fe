@@ -4,42 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <base href="/profile-card-component/">
+    <base href="/profile-card-component/" />
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Profile card component</title>
   </head>
   <body class="font-kumbh">
-      <main class="relative min-h-screen bg-106-cyan flex ">
-        <article class="z-20 flex  m-auto bg-white flex-col min-w-sm rounded-xl overflow-hidden relative">
-          <img src="./images/bg-pattern-card.svg" class=" w-full" alt="">
-          <img src="./images/image-victor.jpg" class="-mt-12 rounded-full max-h-24 w-max mx-auto ring-4 ring-white" alt="">
+    <main class="relative flex min-h-screen bg-106-cyan">
+      <article
+        class="min-w-sm relative z-20 m-auto flex flex-col overflow-hidden rounded-xl bg-white"
+      >
+        <img src="./images/bg-pattern-card.svg" class="w-full" alt="" />
+        <img
+          src="./images/image-victor.jpg"
+          class="mx-auto -mt-12 max-h-24 w-max rounded-full ring-4 ring-white"
+          alt=""
+        />
 
-            <h1 class="mt-5 text-center text-106-desaturated_blue text-xl font-bold">Victor Crest <span class="font-normal text-106-grayish_blue">26</span></h1>
-            <h3 class="text-center text-106-grayish_blue">London</h3>
-        
-            <hr class="my-6"/>
+        <h1
+          class="mt-5 text-center text-xl font-bold text-106-desaturated_blue"
+        >
+          Victor Crest <span class="font-normal text-106-grayish_blue">26</span>
+        </h1>
+        <h3 class="text-center text-106-grayish_blue">London</h3>
 
-            <div class="text-106-grayish_blue flex mb-6 text-center justify-evenly">
-              <div class="flex flex-col">
-                <span class="text-106-desaturated_blue font-bold text-lg">80K</span>
-                <span class="tracking-wider text-sm">Followers</span>
-              </div>
-              
-              <div class="flex flex-col">
-                <span class="text-106-desaturated_blue font-bold text-lg">803K</span>
-                <span class="tracking-wider text-sm">Likes</span>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-106-desaturated_blue font-bold text-lg">1.4K</span>
-                <span class="tracking-wider text-sm">Photos</span>
-              </div>
-            </div>
-    </article>
-    <img  class="img-1" src="./images/bg-pattern-bottom.svg" alt="">
-    <img  class="img-2" src="./images/bg-pattern-top.svg" alt="">
-      
-    </div>
-  </main>
-</body>
+        <hr class="my-6" />
+
+        <div class="mb-6 flex justify-evenly text-center text-106-grayish_blue">
+          <div class="flex flex-col">
+            <span class="text-lg font-bold text-106-desaturated_blue">80K</span>
+            <span class="text-sm tracking-wider">Followers</span>
+          </div>
+
+          <div class="flex flex-col">
+            <span class="text-lg font-bold text-106-desaturated_blue"
+              >803K</span
+            >
+            <span class="text-sm tracking-wider">Likes</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-lg font-bold text-106-desaturated_blue"
+              >1.4K</span
+            >
+            <span class="text-sm tracking-wider">Photos</span>
+          </div>
+        </div>
+      </article>
+      <img class="img-1" src="./images/bg-pattern-bottom.svg" alt="" />
+      <img class="img-2" src="./images/bg-pattern-top.svg" alt="" />
+    </main>
+  </body>
 </html>
