@@ -3,8 +3,5 @@ module.exports = {
   trailingComma: "es5",
   arrowParens: "avoid",
   proseWrap: "always",
-  plugins: [
-    require("prettier-plugin-tailwindcss"),
-    require("prettier-plugin-sh"),
-  ],
+  plugins: [require("prettier-plugin-tailwindcss")],
 };

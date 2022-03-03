@@ -2,23 +2,9 @@
 # prettierignore
 permalink: "../README.md"
 ---
+
 # Frontend Mentor Solutions
 
-{% set img = "design/desktop-preview.jpg" -%}
-{%- set url = "https://fe-muchina.vercel.app/" -%}
-{%- set count = 0 %}
-{% for s in solutions -%}
-{%- if s.completed -%}
-{%- set count = count + 1 -%}
-| <img width=360 src="./src/{{s.dir}}/{{img}}" alt="{{s.name}}"><p><h4>{{s.name }}</h4><span><a href="./src/{{s.dir}}">Source</a>. <a href="https://fe-muchina.vercel.app/{{s.dir}}">Preview</a></span> </p>
-{%- if (loop.index % 3) === 0 -%}
-| 
-{% endif %}
-
-{%- if loop.index === 3 -%}
-| :--: |  :--: | :--: |
-{% endif -%}
-{%- endif -%}
-{%- endfor %}
-{%- for i in range(0, (count % 3)) -%}|{%- endfor %}
-
+{% include "table-preview.njk" %}
+{% include "tools.md" %}
+{% include "setup.md" %}

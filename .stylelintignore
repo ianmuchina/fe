@@ -4,5 +4,4 @@ package.json
 pnpm-lock.yaml
 .husky
 **/style-guide.md
-.lhci
-.lighthouseci/
+scripts/
