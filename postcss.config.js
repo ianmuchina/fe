@@ -5,6 +5,7 @@ const postcssPresetEnv = require("postcss-preset-env");
 const cssnano = require("cssnano");
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
+const OpenProps = require("open-props");
 
 // Change all fonts to block instead of swap.
 const fontMust = x => {
@@ -24,9 +25,7 @@ module.exports = {
     // Set 'font-display' to 'swap' on all @font-face rules
     fontMust("block"),
     // Use open props without importing the css file
-    postcssJitProps({
-      files: ["./node_modules/open-props/open-props.min.css"],
-    }),
+    postcssJitProps(OpenProps),
     //Taiwlind
     tailwindcss(),
     // Minify css
