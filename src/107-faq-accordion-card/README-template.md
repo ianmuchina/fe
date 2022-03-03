@@ -94,8 +94,8 @@ To see how you can add code snippets, see below:
 
 ```js
 const proudOfThisFunc = () => {
-  console.log("🎉")
-}
+  console.log("🎉");
+};
 ```
 
 If you want more help with writing markdown, we'd recommend checking out

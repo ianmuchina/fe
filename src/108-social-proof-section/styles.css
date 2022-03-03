@@ -1,3 +1,5 @@
+/* stylelint-disable selector-class-pattern */
+
 /* CSS Resets */
 @import "/node_modules/sanitize.css/sanitize.css";
 @import "/node_modules/sanitize.css/typography.css";
@@ -7,10 +9,10 @@
 
 :root {
   /* Color Variables */
-  --very-dark-magenta: hsl(300, 43%, 22%);
+  --very-dark-magenta: #502050;
   --soft-pink: #f270aa;
-  --dark-grayish-magenta: hsl(303, 10%, 53%);
-  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --dark-grayish-magenta: #937b92;
+  --light-grayish-magenta: #f7f2f7;
 }
 
 /* Reset styles */
@@ -21,7 +23,7 @@ p {
 
 body {
   min-height: 100vh;
-  font-family: "SpartanVariable";
+  font-family: SpartanVariable, sans-serif;
   font-size: 15px;
 }
 
@@ -36,6 +38,7 @@ main {
   font-weight: 700;
   text-align: center;
 }
+
 .description {
   padding: 1rem;
   text-align: center;
@@ -48,6 +51,7 @@ main {
   padding: 1rem;
   flex-direction: column;
 }
+
 .critic-review {
   display: flex;
   flex-direction: column;
@@ -58,10 +62,12 @@ main {
   text-align: center;
   width: 100%;
 }
+
 .ratings {
   font-weight: 700;
   color: var(--very-dark-magenta);
 }
+
 .stars {
   color: #ef9546;
   font-size: 24px;
@@ -73,6 +79,7 @@ main {
   gap: 1rem;
   padding: 1rem;
 }
+
 .user-review {
   height: 100%;
   display: flex;
@@ -82,6 +89,7 @@ main {
   border-radius: 6px;
   background-color: var(--very-dark-magenta);
 }
+
 .user {
   gap: 1rem;
   display: flex;
@@ -92,13 +100,16 @@ main {
 .profile-pic {
   border-radius: 100%;
 }
+
 .name {
   color: white;
   font-weight: 700;
 }
+
 .verified {
   color: var(--soft-pink);
 }
+
 .fullText {
   color: white;
 }
@@ -113,6 +124,11 @@ main {
   .title {
     font-size: 48px;
   }
+
+  .user-review {
+    height: max-content;
+  }
+
   .user-review :nth-child(1),
   .critic-review :nth-child(1) {
     align-self: flex-start;
@@ -126,9 +142,6 @@ main {
   .user-review:nth-child(3),
   .critic-review:nth-child(3) {
     align-self: flex-end;
-  }
-  .user-review {
-    height: max-content;
   }
 }
 
@@ -169,7 +182,6 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     height: 300px;
     max-height: max-content;
-
     gap: 1rem;
   }
 
@@ -201,6 +213,7 @@ main {
   left: 0;
   top: 0;
 }
+
 .bg-bottom {
   bottom: 0;
   right: 0;
@@ -214,9 +227,11 @@ main {
   .mobile {
     display: none;
   }
+
   .desktop {
     display: block;
   }
+
   .bg-top {
     width: 100%;
   }

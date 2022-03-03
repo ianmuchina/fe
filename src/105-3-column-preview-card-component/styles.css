@@ -5,14 +5,19 @@
 /* Colors */
 :root {
   font-size: 15px;
+
+  /* Colors */
+
   /* Primary */
-  --bright-orange: hsl(31, 77%, 52%);
-  --dark-cyan: hsl(184, 100%, 22%);
-  --very-dark-cyan: hsl(179, 100%, 13%);
+  --bright-orange: #e38826;
+  --dark-cyan: #006970;
+  --very-dark-cyan: #004241;
+
   /* Paragraphs */
-  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --transparent-white: #ffffffbf;
+
   /* Background, headings, buttons */
-  --very-light-gray: hsl(0, 0%, 95%);
+  --very-light-gray: #f2f2f2;
 }
 
 * {
@@ -28,6 +33,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
   color: var(--very-light-gray);
 }
+
 .bg-orange {
   background-color: var(--bright-orange);
 }
@@ -35,6 +41,7 @@ body {
 .bg-dark-cyan {
   background-color: var(--dark-cyan);
 }
+
 .bg-very-dark-cyan {
   background-color: var(--very-dark-cyan);
 }
@@ -46,6 +53,7 @@ body {
 .color-dark-cyan {
   color: var(--dark-cyan);
 }
+
 .color-very-dark-cyan {
   color: var(--very-dark-cyan);
 }
