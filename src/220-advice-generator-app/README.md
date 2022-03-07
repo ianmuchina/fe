@@ -47,7 +47,7 @@ I plan on getting to this later.
 1. The api always returns errors if the id is either `22`, `48`, or `67`. I
    don't know why.
 
-2. The api respomses have unicode escape characters on advice `146` and `76`.
+2. The api responses have unicode escape characters on advice `146` and `76`.
    I'm having trouble displaying them in html.
 
    eg: `\u00c3\u00a4` appears as `Ã¤` instead of `ä`.
