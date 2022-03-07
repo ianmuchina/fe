@@ -409,6 +409,18 @@
   },
   {
     "dist": "",
+    "dir": "220-advice-generator-app",
+    "name": "Advice generator app",
+    "loading": "lazy",
+    "preview": "design/desktop-preview.jpg",
+    "design": {
+      "desktop": "design/desktop-design.jpg",
+      "mobile": "design/mobile-design.jpg"
+    },
+    "completed": true
+  },
+  {
+    "dist": "",
     "dir": "301-interactive-comments-section",
     "name": "interactive comments section",
     "loading": "lazy",

@@ -1,0 +1,89 @@
+/* CSS Reset */
+@import "/node_modules/sanitize.css/sanitize.css";
+@import "/node_modules/sanitize.css/typography.css";
+
+/* Font */
+@import "/node_modules/@fontsource/manrope/variable.css";
+
+:root {
+  --accent: hsl(150deg 100% 66%);
+  --gray-200: #cee3e9;
+  --gray-500: #4e5d73;
+  --gray-600: #323a49;
+  --gray-700: #1f2632;
+}
+
+body {
+  color: var(--gray-200);
+  background-color: var(--gray-700);
+
+  /* Verticaly center card on page */
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+  /* Fonts */
+  font-family: ManropeVariable, Manrope, sans-serif;
+}
+
+h1,
+p,
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  border-radius: 1rem;
+  width: 540px;
+  min-width: 360px;
+  max-width: 540px;
+  padding: 2rem;
+  background-color: var(--gray-600);
+
+  /* Center everything on card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  /* Allow children to center themselves */
+  position: relative;
+
+  /* Spacing */
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--accent);
+}
+
+p {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.dice {
+  position: absolute;
+  bottom: -1.7rem;
+  background-color: var(--accent);
+  padding: 1.2rem;
+  border-radius: 100%;
+}
+
+/* Quotation Marks */
+
+/* Opening */
+blockquote p::before {
+  content: open-quote;
+  font-size: 2.2rem;
+}
+
+/* Closing */
+blockquote p::after {
+  content: close-quote;
+  font-size: 2.2rem;
+}
