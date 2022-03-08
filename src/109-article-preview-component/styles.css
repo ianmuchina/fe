@@ -106,7 +106,7 @@ details {
   position: relative;
 }
 
-details[open] > summary > .share {
+details[open]>summary>.share {
   color: white;
   background-color: var(--gray-500);
 }
@@ -155,7 +155,8 @@ details[open] > summary > .share {
     bottom: 0;
     top: 0;
     margin: -16px -32px;
-    /* Non invasive styles */
+
+    /* Styles */
     color: gray;
     background-color: var(--gray-600);
     border-radius: 0 0 12px 12px;
@@ -165,7 +166,7 @@ details[open] > summary > .share {
     color: cyan;
   }
 
-  .menu > span {
+  .menu>span {
     display: flex;
     gap: 1rem;
     align-items: center;
