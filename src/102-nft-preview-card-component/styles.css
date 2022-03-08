@@ -122,9 +122,9 @@ a:visited {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0 255 255 50%);
   opacity: 0;
   transition: 0.3s;
+  background-color: #00ffff49;
 
   /* Center eye icon */
   display: flex;
