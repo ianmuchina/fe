@@ -1,6 +1,9 @@
 [
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "101-qr-code-component",
     "name": "qr code component",
     "loading": "eager",
@@ -13,6 +16,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "102-nft-preview-card-component",
     "name": "nft preview card component",
     "loading": "eager",
@@ -25,6 +31,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "103-order-summary-component",
     "name": "order summary component",
     "loading": "eager",
@@ -37,6 +46,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "104-stats-preview-card-component",
     "name": "stats preview card component",
     "loading": "eager",
@@ -49,6 +61,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "105-3-column-preview-card-component",
     "name": "3 column preview card component",
     "loading": "eager",
@@ -61,6 +76,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "106-profile-card-component",
     "name": "profile card component",
     "loading": "eager",
@@ -73,6 +91,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "107-faq-accordion-card",
     "name": "faq accordion card",
     "loading": "eager",
@@ -85,6 +106,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "108-social-proof-section",
     "name": "social proof section",
     "loading": "lazy",
@@ -97,6 +121,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "109-article-preview-component",
     "name": "article preview component",
     "loading": "lazy",
@@ -105,10 +132,13 @@
       "desktop": "design/desktop-design.jpg",
       "mobile": "design/mobile-design.jpg"
     },
-    "completed": true
+    "completed": false
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "110-four-card-feature-section",
     "name": "four card feature section",
     "loading": "lazy",
@@ -121,6 +151,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "111-base-apparel-coming-soon",
     "name": "base apparel coming soon",
     "loading": "lazy",
@@ -133,6 +166,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "112-intro-component-with-signup-form",
     "name": "intro component with signup form",
     "loading": "lazy",
@@ -145,6 +181,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "113-single-price-grid-component",
     "name": "single price grid component",
     "loading": "lazy",
@@ -157,6 +196,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "114-ping-coming-soon-page",
     "name": "ping coming soon page",
     "loading": "lazy",
@@ -169,6 +211,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 1,
     "dir": "115-huddle-landing-page-with-single-introductory-section",
     "name": "huddle landing page with single introductory section",
     "loading": "lazy",
@@ -181,6 +226,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "201-time-tracking-dashboard",
     "name": "time tracking dashboard",
     "loading": "lazy",
@@ -193,6 +241,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "202-tip-calculator-app",
     "name": "tip calculator app",
     "loading": "lazy",
@@ -205,6 +256,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "203-sunnyside-agency-landing-page",
     "name": "sunnyside agency landing page",
     "loading": "lazy",
@@ -217,6 +271,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "204-blogr-landing-page",
     "name": "blogr landing page",
     "loading": "lazy",
@@ -229,6 +286,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "205-crowdfunding-product-page",
     "name": "crowdfunding product page",
     "loading": "lazy",
@@ -241,6 +301,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "206-interactive-pricing-component",
     "name": "interactive pricing component",
     "loading": "lazy",
@@ -253,6 +316,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "207-loopstudios-landing-page",
     "name": "loopstudios landing page",
     "loading": "lazy",
@@ -265,6 +331,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "208-testimonials-grid-section",
     "name": "testimonials grid section",
     "loading": "lazy",
@@ -277,6 +346,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "209-fylo-data-storage-component",
     "name": "fylo data storage component",
     "loading": "lazy",
@@ -289,6 +361,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "200-coding-bootcamp-testimonials-slider",
     "name": "coding bootcamp testimonials slider",
     "loading": "lazy",
@@ -301,6 +376,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "211-social-media-dashboard-with-theme-switcher",
     "name": "social media dashboard with theme switcher",
     "loading": "lazy",
@@ -313,6 +391,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "212-insure-landing-page",
     "name": "insure landing page",
     "loading": "lazy",
@@ -325,6 +406,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "213-pricing-component-with-toggle",
     "name": "pricing component with toggle",
     "loading": "lazy",
@@ -337,6 +421,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "214-project-tracking-intro-component",
     "name": "project tracking intro component",
     "loading": "lazy",
@@ -349,6 +436,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "215-clipboard-landing-page",
     "name": "clipboard landing page",
     "loading": "lazy",
@@ -361,6 +451,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "216-huddle-landing-page-with-alternating-feature-blocks",
     "name": "huddle landing page with alternating feature blocks",
     "loading": "lazy",
@@ -373,6 +466,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "217-fylo-dark-theme-landing-page",
     "name": "fylo dark theme landing page",
     "loading": "lazy",
@@ -385,6 +481,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "218-fylo-landing-page-with-two-column-layout",
     "name": "fylo landing page with two column layout",
     "loading": "lazy",
@@ -397,6 +496,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 2,
     "dir": "219-huddle-landing-page-with-curved-sections",
     "name": "huddle landing page with curved sections",
     "loading": "lazy",
@@ -409,6 +511,9 @@
   },
   {
     "dist": "",
+    "js": true,
+    "api": true,
+    "level": 2,
     "dir": "220-advice-generator-app",
     "name": "Advice generator app",
     "loading": "lazy",
@@ -421,6 +526,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "301-interactive-comments-section",
     "name": "interactive comments section",
     "loading": "lazy",
@@ -433,6 +541,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "302-ecommerce-product-page",
     "name": "ecommerce product page",
     "loading": "lazy",
@@ -445,6 +556,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "303-calculator-app",
     "name": "calculator app",
     "loading": "lazy",
@@ -457,6 +571,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "304-launch-countdown-timer",
     "name": "launch countdown timer",
     "loading": "lazy",
@@ -469,6 +586,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "305-todo-app",
     "name": "todo app",
     "loading": "lazy",
@@ -481,6 +601,10 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "api": false,
+    "level": 3,
     "dir": "306-room-homepage",
     "name": "room homepage",
     "loading": "lazy",
@@ -493,6 +617,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "307-ip-address-tracker",
     "name": "ip address tracker",
     "loading": "lazy",
@@ -505,6 +632,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "308-chat-app-css-illustration",
     "name": "chat app css illustration",
     "loading": "lazy",
@@ -517,6 +647,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "309-static-job-listings",
     "name": "static job listings",
     "loading": "lazy",
@@ -529,6 +662,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "300-easybank-landing-page",
     "name": "easybank landing page",
     "loading": "lazy",
@@ -541,6 +677,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "311-manage-landing-page",
     "name": "manage landing page",
     "loading": "lazy",
@@ -553,6 +692,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "312-url-shortening-api",
     "name": "url shortening api",
     "loading": "lazy",
@@ -565,6 +707,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "313-bookmark-landing-page",
     "name": "bookmark landing page",
     "loading": "lazy",
@@ -577,6 +722,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "314-rock-paper-scissors",
     "name": "rock paper scissors",
     "loading": "lazy",
@@ -589,6 +737,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "315-rest-countries-api-with-color-theme-switcher",
     "name": "rest countries api with color theme switcher",
     "loading": "lazy",
@@ -601,6 +752,9 @@
   },
   {
     "dist": "",
+    "js": false,
+    "api": false,
+    "level": 3,
     "dir": "316-space-tourism-website",
     "name": "space tourism website",
     "loading": "lazy",

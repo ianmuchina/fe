@@ -20,7 +20,11 @@ module.exports = {
       gray: colors.slate,
       red: colors.red,
       green: colors.green,
-
+      cyan: colors.cyan,
+      lime: colors.lime,
+      fuchsia: colors.fuchsia,
+      amber: colors.amber,
+      blue: colors.blue,
       // Solution Specific colors
       // Stats Preview Card
       104: {

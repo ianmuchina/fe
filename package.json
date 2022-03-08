@@ -7,12 +7,12 @@
     "fmt": "pretty-quick",
     "fmt-all": "prettier --write .",
     "lint:css": "stylelint 'src/**/*.css'",
-    "build": "eleventy && parcel build './src/*.html' ",
-    "dev": "eleventy && parcel './src/*.html' && parcel watch './src/*.html'",
+    "build": "parcel build './src/**/*.html' ",
+    "dev": "parcel './src/*.html' && parcel watch './src/**/*.html'",
     "clean": "rm dist/* -fr && rm .lhci/* -fr",
     "test": "lhci autorun",
-    "docs:build": "eleventy",
-    "docs:dev": "eleventy --watch",
+    "docs:dev": "eleventy --watch & tailwindcss --content docs/index.njk -i tailwind.css -o src/index.css -w",
+    "docs:build": "eleventy && tailwindcss --content docs/index.njk -i tailwind.css -o src/index.css",
     "prepare": "husky install"
   },
   "optionalDependencies": {

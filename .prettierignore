@@ -6,3 +6,5 @@ pnpm-lock.yaml
 **/style-guide.md
 .lhci
 .lighthouseci/
+src/index.html
+src/index.css

@@ -4,3 +4,5 @@ node_modules/
 src/index.html
 .lighthouseci
 .lhci
+src/index.html
+src/index.css
