@@ -1,0 +1,153 @@
+/* Resets */
+@import "/node_modules/sanitize.css/sanitize.css";
+@import "/node_modules/sanitize.css/typography.css";
+
+/* Fonts */
+@import "/node_modules/@fontsource/poppins/300.css";
+@import "/node_modules/@fontsource/poppins/400.css";
+@import "/node_modules/@fontsource/poppins/500.css";
+@import "/node_modules/@fontsource/poppins/600.css";
+@import "/node_modules/@fontsource/poppins/700.css";
+
+
+:root {
+  /* Primary Colors */
+  --red: #ea5353;
+  --cyan: #45d3d3;
+  --orange: #fcaf4a;
+  --blue: #549ef2;
+
+  /* Neutral Colors */
+  --very-dark-blue: #4c4e61;
+  --grayish-blue: #a3a5ae;
+  --very-light-gray: #fafafa;
+}
+
+/* Reset Ul styles */
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: var(--very-dark-blue);
+  background-color: var(--very-light-gray);
+  font-family: poppins, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 72px;
+}
+
+/* Desktop Styles */
+header {
+  width: 512px;
+  max-width: 512px;
+}
+
+/* Header */
+
+/* Title */
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.title>div:first-child {
+  font-weight: 300;
+}
+
+.title>div:last-child {
+  font-weight: 600;
+}
+
+/* Slug */
+header>p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Card */
+
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+  padding: 0;
+  list-style-type: none;
+  place-items: center;
+}
+
+.card {
+  --border: 4px;
+  --shadow: #37395011;
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top: solid var(--border) var(--border-color);
+  border-radius: var(--border);
+  width: 350px;
+  height: 250px;
+  padding: 32px;
+  gap: 1rem;
+
+  /* Shadows */
+  box-shadow: 0 10px 15px -3px var(--shadow), 0 4px 6px -4px var(--shadow);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.card p {
+  font-size: 13px;
+}
+
+
+.icon {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+.border-red {
+  --border-color: var(--red);
+}
+
+.border-cyan {
+  --border-color: var(--cyan);
+}
+
+.border-orange {
+  --border-color: var(--orange);
+}
+
+.border-blue {
+  --border-color: var(--blue);
+}
+
+
+
+ul>li:first-child {
+  grid-row: 1/3;
+  grid-column: 1/1;
+}
+
+ul>li:last-child {
+  grid-row: 1 / 3;
+  grid-column: 3/3;
+}
