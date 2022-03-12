@@ -3,7 +3,7 @@
   "description": "Solutions to frontend mentor challenges",
   "version": "0.0.1",
   "scripts": {
-    "fmt:check": "prettier --check .",
+    "fmt-check": "prettier --check .",
     "fmt": "pretty-quick",
     "fmt-all": "prettier --write .",
     "lint:css": "stylelint 'src/**/*.css'",
