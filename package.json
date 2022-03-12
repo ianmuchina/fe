@@ -11,8 +11,8 @@
     "dev": "parcel './src/*.html' && parcel watch './src/**/*.html'",
     "clean": "rm dist/* -fr && rm .lhci/* -fr",
     "test": "lhci autorun",
-    "docs:dev": "eleventy --watch & tailwindcss --content docs/index.njk -i tailwind.css -o src/index.css -w",
-    "docs:build": "eleventy && tailwindcss --content docs/index.njk -i tailwind.css -o src/index.css",
+    "docs:dev": "eleventy --watch & tailwindcss --content docs/index.njk -o src/index.css -w",
+    "docs:build": "eleventy && tailwindcss --content docs/index.njk -o src/index.css",
     "prepare": "husky install"
   },
   "optionalDependencies": {

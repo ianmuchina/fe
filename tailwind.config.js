@@ -5,12 +5,42 @@ module.exports = {
   content: ["./src/**/*.html"],
   theme: {
     extend: {
+      // prettier-ignore
       fontFamily: {
-        inter: ['"InterVariable"', "serif"],
-        lexend: ["Lexend DecaVariable", "serif"],
-        kumbh: ["Kumbh SansVariable", "serif"],
+        alata: ["Alata", "sans-serif"],
+        bai_jamjuree: ["Bai Jamjuree", "sans-serif"],
+        barlow_condensed: ["Barlow Condensed", "sans-serif"],
+        barlow_semi_condensed: ["Barlow Semi Condensed", "sans-serif"],
+        barlow: ["Barlow", "sans-serif"],
+        be_vietnam: ["Be Vietnam", "sans-serif"],
+        big_shoulders_display: ["Big Shoulders Display", "Big Shoulders DisplayVariable", "sans-serif",],
+        commissioner: ["Commissioner", "CommissionerVariable", "sans-serif"],
+        dm_serif_display: ["Dm Serif Display", "sans-serif"],
+        fraunces: ["Fraunces", "FrauncesVariable", "sans-serif"],
+        inter: ["Inter", "InterVariable", "sans-serif"],
+        josefin_sans: ["Josefin Sans", "Josefin SansVariable", "sans-serif"],
+        karla: ["Karla", "KarlaVariable", "sans-serif"],
+        kumbh_sans: ["Kumbh Sans", "Kumbh SansVariable", "sans-serif"],
+        lexend_deca: ["Lexend Deca", "Lexend DecaVariable", "sans-serif"],
+        libre_franklin: ["Libre Franklin", "Libre FranklinVariable", "sans-serif",],
+        manrope: ["Manrope", "ManropeVariable", "sans-serif"],
+        montserrat: ["Montserrat", "MontserratVariable", "sans-serif"],
+        nunito_sans: ["Nunito Sans", "sans-serif"],
+        open_sans: ["Open Sans", "Open SansVariable", "sans-serif"],
+        outfit: ["Outfit", "OutfitVariable", "sans-serif"],
+        overpass: ["Overpass", "OverpassVariable", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        public_sans: ["Public Sans", "Public SansVariable", "sans-serif"],
+        raleway: ["Raleway", "RalewayVariable", "sans-serif"],
+        red_hat_display: ["Red Hat Display", "Red Hat DisplayVariable", "sans-serif",],
+        red_hat_text: ["Red Hat Text", "Red Hat TextVariable", "sans-serif"],
+        rubik: ["Rubik", "RubikVariable", "sans-serif"],
+        space_mono: ["Space Mono", "sans-serif"],
+        spartan: ["Spartan", "SpartanVariable", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans-serif"],
       },
     },
+
 
     colors: {
       // Global Colors

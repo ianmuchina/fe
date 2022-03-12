@@ -1,5 +1,5 @@
 @import "/node_modules/@fontsource/kumbh-sans/variable.css";
-@import "/tailwind.css";
+@import "/node_modules/tailwindcss/tailwind.css";
 
 .img-1 {
   position: fixed;
