@@ -5,24 +5,25 @@
 /* Fonts */
 @import "/node_modules/@fontsource/poppins/200.css";
 @import "/node_modules/@fontsource/poppins/400.css";
-@import "/node_modules/@fontsource/poppins/500.css";
 @import "/node_modules/@fontsource/poppins/600.css";
-@import "/node_modules/@fontsource/poppins/700.css";
-
 
 :root {
-  /* Primary Colors */
+  /* Colors */
   --red: #ea5353;
   --cyan: #45d3d3;
   --orange: #fcaf4a;
   --blue: #549ef2;
-
-  /* Neutral Colors */
   --very-dark-blue: #4c4e61;
   --grayish-blue: #a3a5ae;
   --very-light-gray: #fafafa;
+  --shadow: #3e6bad33;
+  --bg: #fafafa;
+  --card-bg: white;
+  --font-sans: poppins, sans-serif;
+  --text: var(--very-dark-blue);
+  --text-secondary: var(--grayish-blue);
 
-  /* Card */
+  /* Size tokens. Makes media queries simpler */
   --title-size: 32px;
   --description-size: 15px;
   --card-title-size: 20px;
@@ -31,16 +32,30 @@
   --card-height: 250px;
   --header-width: 512px;
   --border: 4px;
-  --shadow: #37395011;
   --card-padding: 32px;
-  --card-background: white;
-  --font-sans: poppins, sans-serif;
   --container-gap: 32px;
 }
 
+/* Dark Mode */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --red: #F56565;
+    --cyan: #38B2AC;
+    --orange: #F6AD55;
+    --blue: #4299E1;
+    --very-dark-blue: #4c4e61;
+    --grayish-blue: #a3a5ae;
+    --very-light-gray: #fafafa;
+    --shadow: #0000;
+    --bg: #171923;
+    --card-bg: #1A202C;
+    --text: #F7FAFC;
+    --text-secondary: #CBD5E0;
+  }
+} */
 
 /* Reset Ul styles */
-
 h1,
 h2,
 p {
@@ -49,9 +64,11 @@ p {
 }
 
 body {
-  color: var(--very-dark-blue);
-  background-color: var(--very-light-gray);
+  color: var(--text);
+  background-color: var(--bg);
   font-family: var(--font-sans);
+
+  /* Center Content on Page */
   display: grid;
   place-items: center;
   height: 100vh;
@@ -71,13 +88,6 @@ header {
   max-width: var(--header-width);
 }
 
-.a {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-/* Header */
 .title {
   font-size: var(--title-size);
   text-align: center;
@@ -92,19 +102,23 @@ header {
 }
 
 .description {
-  color: var(--grayish-blue);
+  color: var(--text-secondary);
   font-size: var(--description-size);
   text-align: center;
 }
 
+
 /* Card Container */
 .card-container {
   display: flex;
+  place-items: center;
   flex-direction: column;
   gap: var(--container-gap);
-  padding: 0;
+
+  /* Reset styles */
   list-style-type: none;
-  place-items: center;
+  padding: 0;
+
 }
 
 .card {
@@ -117,8 +131,15 @@ header {
   gap: 1rem;
   border-radius: var(--border);
   box-shadow: 0 10px 15px -3px var(--shadow), 0 4px 6px -4px var(--shadow);
-  background-color: var(--card-background);
+  background-color: var(--card-bg);
+  outline: solid 1px var(--border);
   border-top: solid var(--border) var(--border-color);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .card-title {
@@ -129,17 +150,27 @@ header {
 .card-text {
   line-height: 23px;
   font-size: var(--card-text-size);
-  color: var(--grayish-blue);
+  color: var(--text-secondary);
+
+  /* PxP */
   margin-top: -8px;
 }
 
-/* Desktop Large */
+/* Place Icon on right */
+.icon {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Laptop L & larger Use special grid layout */
 @media (min-width: 1440px) {
   .card-container {
-    margin-top: 1rem;
-    display: grid;
+    /* Use 3x2 grid */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    /* Pxp */
+    margin-top: 1rem;
   }
 
   .card:first-child {
@@ -153,7 +184,7 @@ header {
   }
 }
 
-/* Desktop Styles */
+/* Laptop */
 @media (min-width: 1024px) {
   :root {
     --title-size: 36px;
@@ -165,15 +196,17 @@ header {
 /* Tablet */
 @media (min-width: 768px) {
   .card-container {
+    /* Display cards in compact 2x2 grid */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
 
-/* Mobile Styles */
+/* Mobile L */
 @media (max-width: 512px) {
   :root {
+    /* Reduce sizes */
     --title-size: 24px;
     --card-width: 310px;
     --container-gap: 24px;
@@ -186,7 +219,7 @@ header {
   }
 }
 
-/* Smallest Mobile */
+/* Mobile S */
 @media (max-width: 330px) {
   :root {
     --container-gap: 1rem;
@@ -198,14 +231,9 @@ header {
     width: 42px;
     height: 42px;
   }
-
 }
 
-.icon {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
+/* Utilities for border colors */
 .border-red {
   --border-color: var(--red);
 }
