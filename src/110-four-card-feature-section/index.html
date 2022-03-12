@@ -3,16 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Four card feature section</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    Reliable, efficient delivery Powered by Technology Our Artificial
-    Intelligence powered tools use millions of project data points to ensure
-    that your project is successful Supervisor Monitors activity to identify
-    project roadblocks Team Builder Scans our talent network to create the
-    optimal team for your project Karma Regularly evaluates our talent to ensure
-    quality Calculator Uses data from past projects to provide better delivery
-    estimates
+    <main>
+      <header>
+        <h1 class="title">
+          <div>Reliable, efficient delivery</div>
+          <div>Powered by Technology</div>
+        </h1>
+        <p class="description">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </header>
+
+      <ul class="card-container">
+        <!-- Card -->
+        <li class="card border-cyan">
+          <div class="card-content">
+            <h2 class="card-title">Supervisor</h2>
+            <p class="card-text">
+              Monitors activity to identify project roadblocks
+            </p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-supervisor.svg" alt="" />
+          </div>
+        </li>
+
+        <!-- Card -->
+        <li class="card border-red">
+          <div class="card-content">
+            <h2 class="card-title">Team Builder</h2>
+            <p class="card-text">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-team-builder.svg" alt="" />
+          </div>
+        </li>
+
+        <!-- Card -->
+        <li class="card border-orange">
+          <div class="card-content">
+            <h2 class="card-title">Karma</h2>
+            <p class="card-text">
+              Regularly evaluates our talent to ensure quality
+            </p>
+          </div>
+          <div class="icon"><img src="./images/icon-karma.svg" alt="" /></div>
+        </li>
+
+        <!-- Card -->
+        <li class="card border-blue">
+          <div class="card-content">
+            <h2 class="card-title">Calculator</h2>
+            <p class="card-text">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </div>
+          <div class="icon">
+            <img src="./images/icon-calculator.svg" alt="" />
+          </div>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
