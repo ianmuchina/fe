@@ -20,6 +20,8 @@ jobs:
           cache: "pnpm"
 
       - run: pnpm install
-
+      - run: |
+          git config user.name  "Github Actions"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Generate README
         run: ./scripts/gen_readme.sh
