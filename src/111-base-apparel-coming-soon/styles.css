@@ -1,0 +1,180 @@
+/* Resets */
+@import "/node_modules/sanitize.css/sanitize.css";
+@import "/node_modules/sanitize.css/typography.css";
+
+/* Fonts */
+@import "/node_modules/@fontsource/josefin-sans/variable.css";
+
+:root {
+    --desaturated-red: #ce9797;
+    --soft-red: #f96262;
+    --dark-grayish-red: #413a3a;
+    --gr-1: linear-gradient(135deg, #fff, #fff5f5);
+    --gr-2: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+body {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+
+    /* Typography */
+    font-family: "Josefin SansVariable", sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    padding: unset;
+    margin: unset;
+}
+
+main {
+    padding: 68px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    /* Background Color */
+    background-image: url("images/bg-pattern-desktop.svg"), var(--gr-1);
+    background-size: cover;
+
+    /* Pxp */
+    gap: 130px;
+    margin-left: -42px;
+}
+
+/* Full HD, change */
+@media screen and (min-width: 1441px) {
+    main {
+        justify-content: space-evenly;
+        gap: unset;
+    }
+}
+
+main>* {
+    width: 460px;
+}
+
+header {
+    display: flex;
+}
+
+/* Title */
+
+.title {
+    /* Typography */
+    text-transform: uppercase;
+    font-family: "Josefin SansVariable", sans-serif;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: 17.5px;
+
+    /* Layout */
+    width: 460px;
+}
+
+.title>span {
+    font-weight: 600;
+    color: var(--dark-grayish-red);
+}
+
+.title>span:first-child {
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+/* Description */
+
+.description {
+    color: var(--desaturated-red);
+
+    /* Typography */
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+
+    /* Layout */
+    width: 460px;
+
+    /* Pxp */
+    margin-top: 24px;
+}
+
+/* Form  */
+
+form {
+    /* Pxp */
+    margin-top: 42px;
+}
+
+.b {
+    width: 448px;
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: auto;
+    height: 56px;
+}
+
+input {
+    font-size: 16px;
+    padding: 0 2rem;
+    border: solid 1px var(--desaturated-red);
+    color: var(--desaturated-red);
+    background-color: unset;
+    font-family: "Josefin SansVariable", sans-serif;
+    border-radius: 2rem;
+    grid-column: 1/3;
+    grid-row: 1/1;
+    height: 56px;
+}
+
+input:active,
+input:focus {
+    color: #3b3b3b;
+}
+
+/* Error States */
+.error {
+    visibility: hidden;
+}
+
+form:invalid .error {
+    margin-top: 8px;
+    padding: 0 2rem;
+    font-size: 13px;
+    visibility: visible;
+    color: var(--soft-red);
+}
+
+form:invalid input:not(:focus) {
+    border: solid 2px var(--soft-red);
+}
+
+/* Warning Icon */
+form:invalid button::before {
+    position: absolute;
+    content: url("./images/icon-error.svg");
+    left: -2rem;
+}
+
+button {
+    /* Positioning */
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/1;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    background-image: var(--gr-2);
+    font-size: 16px;
+}
+
+button:hover {
+    box-shadow: 0 20px 25px -5px #0705051a 0 8px 10px -6px #7523231a;
+    background-color: var(--soft-red);
+}
+
+
+.hero {
+    height: 100vh;
+}
