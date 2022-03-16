@@ -32,7 +32,8 @@ The designs were created to the following widths:
 
 ## Icons
 
-For the icons in the design, you can choose between using the icons provided or an font icon library.
+For the icons in the design, you can choose between using the icons provided or
+an font icon library.
 
 Some library suggestions can be found below:
 

@@ -38,7 +38,8 @@ The designs were created to the following widths:
 
 ## Icons
 
-You can use either use the social icons provided or load in a font icon library. Some library suggestions can be found below:
+You can use either use the social icons provided or load in a font icon library.
+Some library suggestions can be found below:
 
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
