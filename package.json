@@ -47,12 +47,6 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-standard",
-      "stylelint-config-prettier"
-    ]
-  },
   "parcel": {
     "extends": "@parcel/config-default",
     "optimizers": {
