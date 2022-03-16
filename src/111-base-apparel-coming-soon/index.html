@@ -3,12 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
+    <main>
+      <header>
+        <img class="logo" src="./images/logo.svg" alt="" />
+      </header>
+
+      <img
+        loading="lazy"
+        class="hero-mobile"
+        src="./images/hero-mobile.jpg"
+        alt=""
+      />
+
+      <!-- Content -->
+      <article>
+        <h1 class="title">
+          <span>We're</span>
+          <br />
+          <span>Coming</span>
+          <br />
+          <span>Soon</span>
+        </h1>
+
+        <p class="description">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form action="#submit">
+          <div class="input-container">
+            <input
+              placeholder="Email Address"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <button type="submit">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <p class="error">Please provide a valid email</p>
+        </form>
+      </article>
+    </main>
+
+    <!-- Hero Desktop -->
+    <div class="hero-desktop">
+      <img loading="lazy" src="./images/hero-desktop.jpg" alt="" />
+    </div>
   </body>
 </html>
