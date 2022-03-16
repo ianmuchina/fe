@@ -5,22 +5,39 @@
 /* Fonts */
 @import "/node_modules/@fontsource/josefin-sans/variable.css";
 
+/* 
+┌─────────────┐┌──────────────┐
+│    header   │|              │
+├─────────────┤|              │
+│ hero-mobile │| hero-desktop │
+├─────────────┤|              │
+│    article  │|              │
+└─────────────┘└──────────────┘
+*/
+
 :root {
     --desaturated-red: #ce9797;
     --soft-red: #f96262;
     --dark-grayish-red: #413a3a;
     --gr-1: linear-gradient(135deg, #fff, #fff5f5);
     --gr-2: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+
+    /* Typography */
+    font-family: "Josefin SansVariable", sans-serif;
 }
+
+/* Hero Images */
+
+.hero-mobile {
+    display: none;
+}
+
 
 body {
     /* Layout */
     display: grid;
-    grid-template-columns: 7fr 3fr;
-
-    /* Typography */
-    font-family: "Josefin SansVariable", sans-serif;
-    font-size: 12px;
+    grid-template-columns: 1fr 610px;
+    height: 100vh;
 }
 
 h1 {
@@ -29,35 +46,17 @@ h1 {
 }
 
 main {
-    padding: 68px 0;
+    padding: 64px 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
-
-    /* Background Color */
-    background-image: url("images/bg-pattern-desktop.svg"), var(--gr-1);
-    background-size: cover;
-
-    /* Pxp */
-    gap: 130px;
-    margin-left: -42px;
-}
-
-/* Full HD, change */
-@media screen and (min-width: 1441px) {
-    main {
-        justify-content: space-evenly;
-        gap: unset;
-    }
+    align-items: center;
 }
 
 main>* {
-    width: 460px;
+    padding: 2rem;
+    width: 500px;
 }
 
-header {
-    display: flex;
-}
 
 /* Title */
 
@@ -174,7 +173,108 @@ button:hover {
     background-color: var(--soft-red);
 }
 
+@media screen and (min-width: 1920px) {
+    body {
+        grid-template-columns: 1fr 840px;
+    }
 
-.hero {
-    height: 100vh;
+    main {
+        padding: unset;
+        gap: unset;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        margin-right: -42px;
+    }
+
+    main>* {
+        width: 500px;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    main {
+        /* Background Color */
+        background-image: url("images/bg-pattern-desktop.svg"), var(--gr-1);
+        background-size: cover;
+    }
+
+    .hero-desktop {
+        display: block;
+        background-image: url("./images/hero-desktop.jpg");
+        background-position: right;
+        background-size: cover;
+    }
+}
+
+
+
+/* Tablet and below */
+@media screen and (max-width: 640px) {
+    .title {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 13px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    header {
+        background-color: white;
+    }
+
+    body {
+        display: block;
+        background-image: var(--gr-1);
+    }
+
+    main {
+        display: block;
+        gap: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .b,
+    article,
+    header,
+    .title,
+    .description {
+        width: unset;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    .hero-mobile {
+        padding: 0;
+        display: block;
+        width: 100vw;
+        margin-bottom: 32px;
+    }
+
+    /* Hide Desktop Images */
+    .hero-desktop {
+        display: none;
+    }
+
+    form {
+        margin-top: 42px;
+    }
+
+    .b {
+        grid-template-columns: auto 64px;
+    }
 }
