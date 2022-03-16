@@ -23,7 +23,6 @@ const fontMust = x => {
 module.exports = {
   plugins: [
     // Set 'font-display' to 'swap' on all @font-face rules
-    fontMust("block"),
     // Use open props without importing the css file
     postcssJitProps(OpenProps),
     //Taiwlind
@@ -33,5 +32,6 @@ module.exports = {
     // Backport css and ensure it works on most browsers
     autoprefixer(),
     postcssPresetEnv(),
+    fontMust("block"),
   ],
 };

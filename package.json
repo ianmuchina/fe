@@ -2,19 +2,7 @@
   "name": "fe",
   "description": "Solutions to frontend mentor challenges",
   "version": "0.0.1",
-  "scripts": {
-    "fmt-check": "prettier --check .",
-    "fmt": "pretty-quick",
-    "fmt-all": "prettier --write .",
-    "lint:css": "stylelint 'src/**/*.css'",
-    "build": "parcel build './src/**/*.html' ",
-    "dev": "parcel './src/*.html' && parcel watch './src/**/*.html'",
-    "clean": "rm dist/* -fr && rm .lhci/* -fr",
-    "test": "lhci autorun",
-    "docs:dev": "eleventy --watch & tailwindcss --content docs/index.njk -o src/index.css -w",
-    "docs:build": "eleventy && tailwindcss --content docs/index.njk -o src/index.css && prettier -w README.md",
-    "prepare": "husky install"
-  },
+  "scripts": {},
   "optionalDependencies": {
     "@lhci/cli": "^0.9.0",
     "postcss-cli": "^9.1.0"
@@ -45,12 +33,6 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
-    }
-  },
-  "parcel": {
-    "extends": "@parcel/config-default",
-    "optimizers": {
-      "*.{jpg,jpeg,png}": []
     }
   },
   "dependencies": {
