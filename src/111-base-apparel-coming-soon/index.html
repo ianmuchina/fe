@@ -9,10 +9,15 @@
   <body>
     <main>
       <header>
-        <img src="./images/logo.svg" alt="" />
+        <img class="logo" src="./images/logo.svg" alt="" />
       </header>
 
-      <img class="hero-mobile" src="./images/hero-mobile.jpg" alt="" />
+      <img
+        loading="lazy"
+        class="hero-mobile"
+        src="./images/hero-mobile.jpg"
+        alt=""
+      />
 
       <!-- Content -->
       <article>
@@ -31,25 +36,25 @@
         </p>
 
         <form action="#submit">
-          <div class="b">
+          <div class="input-container">
             <input
               placeholder="Email Address"
               type="email"
               name="email"
               id="email"
             />
-            <p class="error">Please provide a valid email</p>
             <button type="submit">
               <img src="./images/icon-arrow.svg" alt="" />
             </button>
           </div>
+          <p class="error">Please provide a valid email</p>
         </form>
       </article>
     </main>
 
     <!-- Hero Desktop -->
     <div class="hero-desktop">
-      <!-- <img src="./images/hero-desktop.jpg" alt="" /> -->
+      <img loading="lazy" src="./images/hero-desktop.jpg" alt="" />
     </div>
   </body>
 </html>
