@@ -41,7 +41,6 @@ module.exports = {
       },
     },
 
-
     colors: {
       // Global Colors
       transparent: "transparent",

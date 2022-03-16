@@ -1,6 +1,11 @@
 @import "/node_modules/@fontsource/kumbh-sans/variable.css";
 @import "/node_modules/tailwindcss/tailwind.css";
 
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .img-1 {
   position: fixed;
   top: 50%;

@@ -3,4 +3,6 @@
 @import "/node_modules/@fontsource/lexend-deca/variable.css";
 
 /* Tailwind */
-@import "/node_modules/tailwindcss/tailwind.css"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
