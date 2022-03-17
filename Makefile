@@ -24,10 +24,13 @@ dev-static:
 
 docs-css:
 	pnpm exec tailwindcss --content "docs/index.njk" --output "src/index.css" --config "tailwind.config.cjs"
+
 docs-css-w:
 	pnpm exec tailwindcss --content "docs/index.njk" --output "src/index.css" --config "tailwind.config.cjs" --watch
+
 docs-html:
 	pnpm exec eleventy --input="docs" --output="src"
+
 docs-html-w:
 	pnpm exec eleventy --input="docs" --output="src" --watch
 docs: docs-html docs-css fmt
