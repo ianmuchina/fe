@@ -1,80 +1,80 @@
 :root {
-    --bg: hsl(0, 0%, 2%);
-    --alt-bg: hsl(0, 0%, 6%);
-    --text: hsl(0, 0%, 90%);
-    --border: hsl(0, 0%, 25%);
-    --text-alt: hsl(0, 0%, 75%);
-    --success: #38A169;
-    --warn: #ECC94B;
-    --fail: #F56565;
-    --link-color: #63B3ED;
+  --bg: hsl(0, 0%, 2%);
+  --alt-bg: hsl(0, 0%, 6%);
+  --text: hsl(0, 0%, 90%);
+  --border: hsl(0, 0%, 25%);
+  --text-alt: hsl(0, 0%, 75%);
+  --success: #38a169;
+  --warn: #ecc94b;
+  --fail: #f56565;
+  --link-color: #63b3ed;
 
-    font-size: 18px;
-    color: (--text);
+  font-size: 18px;
+  color: (--text);
 }
 
 body {
-    color: var(--text);
-    background-color: var(--bg);
-    font-family: monospace;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    max-height: 100vh;
-    overflow: hidden;
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: monospace;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 main {
-    position: fixed;
-    top: -1rem;
-    bottom: -1rem;
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 360px);
-    gap: 1rem;
-    padding: 2rem;
-    overflow-y: scroll;
+  position: fixed;
+  top: -1rem;
+  bottom: -1rem;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  gap: 1rem;
+  padding: 2rem;
+  overflow-y: scroll;
 }
 
 .r {
-    background-color: var(--alt-bg);
-    padding: 1rem;
-    outline: solid 1px var(--border);
+  background-color: var(--alt-bg);
+  padding: 1rem;
+  outline: solid 1px var(--border);
 }
 
 a {
-    color: var(--link-color);
+  color: var(--link-color);
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    color: var(--text-alt);
-    font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-alt);
+  font-weight: 500;
 }
 
 .green {
-    color: var(--success);
+  color: var(--success);
 }
 
 .red {
-    color: var(--fail);
+  color: var(--fail);
 }
 
 .orange {
-    color: var(--warn);
+  color: var(--warn);
 }
 
 .pass {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 iframe {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    border: unset;
-    background-color: #111;
-    height: 100vh;
-    width: 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: unset;
+  background-color: #111;
+  height: 100vh;
+  width: 50%;
 }
