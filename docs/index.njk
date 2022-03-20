@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Frontend Mentor solutions</title>
+    <meta name="description" content="Solutions to Frontend Mentor challenges">
     <link rel="stylesheet" href="index.css"/>
   </head>
   <body class="bg-gray-200 py-12 px-4">
@@ -37,46 +38,47 @@
               class="thumbnail relative overflow-hidden">
               <!-- Thumbnail Image -->
               <img
-              src="{{ s.dir }}/{{ img }}" loading="lazy" height="214px" class="translate transition-all duration-300"/>
+              alt="" src="{{ s.dir }}/{{ img }}" loading="lazy" height="214px" class="translate transition-all duration-300"/>
               <!-- Overlay -->
-              <a href="{{ s.dir }}" class="absolute top-0 bottom-0 left-0 right-0 transition-all duration-300 hover:bg-gray-900/20"></a>
+              <a aria-label="{{ s.name }}}}" href="{{ s.dir }}" class="absolute top-0 bottom-0 left-0 right-0 transition-all duration-300 hover:bg-gray-900/20"></a>
             </div>
             <!-- Card Content -->
-            <div
-              class="flex h-full flex-col justify-between gap-2 p-6">
-              {# Title #}
-              <h2 class="flex h-full text-xl font-medium hover:underline">
-                <a autocapitalize="on" href="{{ s.dir }}">{{ s.name | capitalize }}
+            <div class="flex h-full flex-col justify-between gap-4 p-6">
+              <h2 class="flex h-full text-gray-800 text-xl font-medium hover:underline">
+                <a href="{{ s.dir }}">{{ s.name | capitalize }}
                 </a>
               </h2>
-              <!-- Tags -->
-              <a class="flex justify-between">
+              <div
+                class="flex justify-between">
+                <!-- Languages/Technologies -->
                 <span class="text-sm font-bold">
-                  <span class="text-cyan-500">HTML</span>
-                  <span class="text-blue-500">CSS</span>
+                  <span class="text-cyan-700">HTML</span>
+                  <span class="text-blue-600">CSS</span>
                   {% if s.js %}
-                    <span class="text-fuchsia-500">JS</span>
+                    <span class="text-fuchsia-600">JS</span>
                   {% endif %}
                   {% if s.api %}
-                    <span class="text-lime-500">API</span>
+                    <span class="text-lime-700">API</span>
                   {% endif %}
                 </span>
+                <!-- Newbie -->
                 {% if s.level == 1 %}
-                  <div class="flex overflow-hidden rounded-md border border-cyan-500 text-xs font-bold">
-                    <span class="flex items-center bg-cyan-500 px-2 leading-none text-white">{{ s.level }}</span>
-                    <span class="flex items-center bg-white px-2 leading-none text-cyan-500">NEWBIE</span>
+                  <div class="flex overflow-hidden rounded-md border border-cyan-700 text-xs font-bold">
+                    <span class="flex items-center bg-cyan-700 px-2 leading-none text-white">{{ s.level }}</span>
+                    <span class="flex items-center bg-white px-2 leading-none text-cyan-700">NEWBIE</span>
                   </div>
                 {% endif %}
+                <!-- Junior -->
                 {% if s.level == 2 %}
-                  <div class="flex overflow-hidden rounded-md border border-lime-500 text-xs font-bold">
-                    <span class="flex items-center bg-lime-500 px-2 leading-none text-white">{{ s.level }}</span>
-                    <span class="flex items-center bg-white px-2 leading-none text-lime-500">JUNIOR</span>
+                  <div class="flex overflow-hidden rounded-md border border-lime-600 text-xs font-bold">
+                    <span class="flex items-center bg-lime-700 px-2 leading-none text-white">{{ s.level }}</span>
+                    <span class="flex items-center bg-whiteg px-2 leading-none text-lime-700">JUNIOR</span>
                   </div>
                 {% endif %}
-              </a>
-              <p class="font-medium flex gap-4 ">
+              </div>
+              <!-- Link to Source -->
+              <p class="font-medium">
                 <a class="text-gray-800 decoration-red-500 underline decoration-2" href="{{ repo }}/tree/{{ branch }}/src/{{ s.dir }}">Source</a>
-                {# <a class="text-gray-800 decoration-red-500 underline decoration-2" href="{{ s.dir }}">Preview</a> #}
               </p>
             </div>
           </article>

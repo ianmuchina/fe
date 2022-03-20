@@ -1,7 +1,3 @@
 dist
 node_modules
-package.json
-pnpm-lock.yaml
-.husky
-**/style-guide.md
-scripts/
+src/index.css

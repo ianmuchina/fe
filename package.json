@@ -2,35 +2,20 @@
   "name": "fe",
   "description": "Solutions to frontend mentor challenges",
   "version": "0.0.1",
-  "scripts": {
-    "fmt-check": "prettier --check .",
-    "fmt": "pretty-quick",
-    "fmt-all": "prettier --write .",
-    "lint:css": "stylelint 'src/**/*.css'",
-    "build": "parcel build './src/**/*.html' ",
-    "dev": "parcel './src/*.html' && parcel watch './src/**/*.html'",
-    "clean": "rm dist/* -fr && rm .lhci/* -fr",
-    "test": "lhci autorun",
-    "docs:dev": "eleventy --watch & tailwindcss --content docs/index.njk -o src/index.css -w",
-    "docs:build": "eleventy && tailwindcss --content docs/index.njk -o src/index.css && prettier -w README.md",
-    "prepare": "husky install"
-  },
+  "scripts": {},
   "optionalDependencies": {
     "@lhci/cli": "^0.9.0",
     "postcss-cli": "^9.1.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@lhci/server": "^0.9.0",
     "@parcel/config-default": "^2.3.2",
     "@parcel/core": "^2.3.2",
     "@parcel/transformer-sass": "^2.3.2",
     "autoprefixer": "^10.4.2",
-    "cssnano": "^5.1.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.4",
     "parcel": "^2.3.2",
     "postcss": "^8.4.7",
-    "postcss-jit-props": "^1.0.4",
     "postcss-preset-env": "^7.4.2",
     "prettier": "2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.8",
@@ -41,17 +26,6 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0",
     "tailwindcss": "^3.0.23"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
-  "parcel": {
-    "extends": "@parcel/config-default",
-    "optimizers": {
-      "*.{jpg,jpeg,png}": []
-    }
   },
   "dependencies": {
     "@fontsource/alata": "^4.5.2",
