@@ -47,6 +47,9 @@ lhci:
 	pnpm exec lhci autorun
 	node tools/render.cjs
 
+lhci-upload:
+	pnpm exec lhci upload --target="temporary-public-storage"
+
 lh-stats:
 	node render.cjs
 
