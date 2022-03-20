@@ -1,4 +1,5 @@
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths: ["docs/**", ".github/workflows/docs.yml"]
@@ -19,9 +20,13 @@ jobs:
           node-version: "16"
           cache: "pnpm"
 
-      - run: pnpm install
+      - name: install dependencies
+        run: pnpm install
       - run: |
           git config user.name  "Github Actions"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - name: Generate README
-        run: ./scripts/gen_readme.sh
+      - run: make readme
+      - run: |
+          git add -f README.md &&
+          git commit -m "Update README" &&
+          git push origin main || echo "No Changes"

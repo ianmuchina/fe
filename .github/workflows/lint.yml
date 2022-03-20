@@ -1,7 +1,8 @@
 on:
+  workflow_dispatch:
   push:
     branches: [main]
-    paths: ["src/**"]
+    paths: ["src/**", ".github/workflows/lint.yml"]
 
 jobs:
   lint:
@@ -22,5 +23,5 @@ jobs:
           cache: "pnpm"
 
       - run: pnpm install
-      - run: pnpm run fmt-check
-      - run: pnpm run lint
+      - run: make fmt-check
+      - run: make lint-css
