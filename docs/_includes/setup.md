@@ -9,29 +9,43 @@ pnpm install
 Start the development server on localhost.
 
 ```
-pnpm run dev
+make dev
 ```
 
 Build the site and save the output to `dist/`
 
 ```sh
-pnpm run build
+make build
 ```
 
 Check css for errors using `stylelint`
 
 ```
-yarn lint:css
+make lint-css
 ```
 
-Format changed files with Prettier.
+Format files with Prettier.
 
 ```
-yarn fmt
+make fmt
 ```
 
-Format all files with Prettier _(slower)_
+Run lighthouse on solutions marked as complete
+
+> edit `docs/_data/solutions.cjs` to mark solution as complete
 
 ```
-yarn fmt-all
+make lhci
+```
+
+See lighthouse results
+
+```
+make docs-html
+```
+
+Generate index
+
+```
+make docs
 ```

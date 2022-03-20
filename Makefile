@@ -24,10 +24,17 @@ dev-static:
 	python3 -m http.server 4000
 
 docs-css:
-	pnpm exec tailwindcss --content "docs/index.njk" --output "src/index.css" --config "tailwind.config.js"
+	pnpm exec tailwindcss \
+		--output "src/index.css" \
+		--content "docs/index.njk" \
+		--config "tailwind.config.js"
 
 docs-css-w:
-	pnpm exec tailwindcss --content "docs/index.njk" --output "src/index.css" --config "tailwind.config.js" --watch
+	pnpm exec tailwindcss \
+		--watch
+		--output "src/index.css" \
+		--content "docs/index.njk" \
+		--config "tailwind.config.js" \
 
 docs-html:
 	pnpm exec eleventy --input="docs" --output="src"
@@ -51,7 +58,7 @@ lhci-upload:
 	pnpm exec lhci upload --target="temporary-public-storage"
 
 lh-stats:
-	node render.cjs
+	node tools/render.cjs
 
 clean:
 	rm -fr .lighthouseci/*
