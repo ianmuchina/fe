@@ -43,14 +43,13 @@
               <a aria-label="{{ s.name }}}}" href="{{ s.dir }}" class="absolute top-0 bottom-0 left-0 right-0 transition-all duration-300 hover:bg-gray-900/20"></a>
             </div>
             <!-- Card Content -->
-            <div
-              class="flex h-full flex-col justify-between gap-4 p-6">
+            <div class="flex h-full flex-col justify-between gap-4 p-6">
               <h2 class="flex h-full text-gray-800 text-xl font-medium hover:underline">
                 <a href="{{ s.dir }}">{{ s.name | capitalize }}
                 </a>
               </h2>
-
-              <div class="flex justify-between">
+              <div
+                class="flex justify-between">
                 <!-- Languages/Technologies -->
                 <span class="text-sm font-bold">
                   <span class="text-cyan-700">HTML</span>
@@ -62,7 +61,6 @@
                     <span class="text-lime-700">API</span>
                   {% endif %}
                 </span>
-
                 <!-- Newbie -->
                 {% if s.level == 1 %}
                   <div class="flex overflow-hidden rounded-md border border-cyan-700 text-xs font-bold">
@@ -70,7 +68,6 @@
                     <span class="flex items-center bg-white px-2 leading-none text-cyan-700">NEWBIE</span>
                   </div>
                 {% endif %}
-                
                 <!-- Junior -->
                 {% if s.level == 2 %}
                   <div class="flex overflow-hidden rounded-md border border-lime-600 text-xs font-bold">
@@ -78,16 +75,15 @@
                     <span class="flex items-center bg-whiteg px-2 leading-none text-lime-700">JUNIOR</span>
                   </div>
                 {% endif %}
-                </div>
-
-                <!-- Link to Source -->
-                <p class="font-medium">
-                  <a class="text-gray-800 decoration-red-500 underline decoration-2" href="{{ repo }}/tree/{{ branch }}/src/{{ s.dir }}">Source</a>
-                </p>
+              </div>
+              <!-- Link to Source -->
+              <p class="font-medium">
+                <a class="text-gray-800 decoration-red-500 underline decoration-2" href="{{ repo }}/tree/{{ branch }}/src/{{ s.dir }}">Source</a>
+              </p>
             </div>
           </article>
         {% endif %}
       {% endfor %}
     </main>
   </body>
-</html></body></html>
+</html>
