@@ -10,9 +10,7 @@ module.exports = {
   ci: {
     collect: {
       staticDistDir: "dist",
-      url: [
-        ...completed,
-      ],
+      url: [...completed],
     },
     assert: {
       preset: "lighthouse:no-pwa",
