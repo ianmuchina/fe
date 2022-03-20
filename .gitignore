@@ -6,5 +6,6 @@ src/index.html
 .lhci
 src/index.html
 src/index.css
+src/lighthouse/
 README.md
 .cache
