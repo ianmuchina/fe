@@ -47,5 +47,10 @@ lh-stats:
 	node render.cjs
 
 clean:
+	rm -fr .lighthouseci/*
+	rm -fr .lhci/*
 
 x: clean build lhci docs fmt
+
+y:
+	node list.js  | fzf | xargs -I{} pnpm exec lhci collect --url {} && pnpm exec lhci upload && node render.cjs

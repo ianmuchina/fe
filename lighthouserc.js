@@ -7,8 +7,6 @@ const completed = solutions
   .map(s => `http://localhost/${s.dir}/index.html`)
   .concat(["index.html"]);
 
-console.log(completed);
-
 module.exports = {
   ci: {
     collect: {
