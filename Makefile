@@ -35,6 +35,9 @@ docs-html:
 docs-html-w:
 	pnpm exec eleventy --input="docs" --output="src" --watch
 
+readme: docs-html
+	pnpm exec prettier -w README.md
+
 docs: docs-html docs-css fmt
 docs-dev: docs-html-w
 
@@ -42,7 +45,8 @@ lhci:
 	rm -fr .lighthouseci/*
 	rm -fr .lhci/*
 	pnpm exec lhci autorun
-	
+	node tools/render.cjs
+
 lh-stats:
 	node render.cjs
 
@@ -50,7 +54,8 @@ clean:
 	rm -fr .lighthouseci/*
 	rm -fr .lhci/*
 
-x: clean build lhci docs fmt
+fonts:
+	tools/fonts.sh install
 
-y:
-	node list.js  | fzf | xargs -I{} pnpm exec lhci collect --url {} && pnpm exec lhci upload && node render.cjs
+fonts-update:
+	tools/fonts.sh update
