@@ -3,15 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="styles.css" />
     <title>Intro component with sign up form</title>
   </head>
   <body>
-    Learn to code by watching others See how experienced developers solve
-    problems in real-time. Watching scripted tutorials is great, but
-    understanding how developers think is invaluable. Try it free 7 days then
-    $20/mo. thereafter First Name Last Name Email Address Password Claim your
-    free trial By clicking the button, you are agreeing to our Terms and
-    Services
+    <main>
+      <article>
+        <h1>Learn to code by watching others</h1>
+
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </article>
+      <form action="#">
+        <button class="cta-1">
+          <span> Try it free 7 days </span>
+          <span> then $20/mo. thereafter </span>
+        </button>
+        <div>
+          <input aria-label="First Name" type="text" placeholder="First Name" />
+        </div>
+
+        <div>
+          <input aria-label="Last Name" type="text" placeholder="Last Name" />
+        </div>
+
+        <div>
+          <input aria-label="Email" type="email" placeholder="Email Address" />
+        </div>
+
+        <div>
+          <input aria-label="Password" type="password" placeholder="Password" />
+        </div>
+
+        <button type="submit">Claim your free trial</button>
+        <p>
+          By clicking the button, you are agreeing to our
+          <a href="#"> Terms and Services </a>
+        </p>
+      </form>
+    </main>
   </body>
 </html>
