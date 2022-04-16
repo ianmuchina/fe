@@ -9,117 +9,174 @@
 @import "/node_modules/@fontsource/poppins/700.css";
 
 :root {
-    --red: #ff7a7a;
-    --green: #38cc8c;
-    --blue: #6055a5;
-    --dark-blue: #3e3c49;
-    --grayish-blue: #b9b6d3;
+  /* Colors */
+  --red: #ff7a7a;
+  --green: #38cc8c;
+  --blue: #6055a5;
+  --dark-blue: #3e3c49;
+  --grayish-blue: #b9b6d3;
+}
 
-    font-family: Poppins, sans-serif;
+@media screen and (max-width: 640px) {
+  :root {
+    --title-font-size: 28px;
+    --form-width: 328px;
+    --desc-width: 320px;
+  }
 }
 
 body {
-    background-color: var(--red);
-    color: white;
-    padding: 1rem;
+  font-family: Poppins, sans-serif;
+  background-color: var(--red);
+  color: white;
+  padding: 1rem;
 
-    /* Background Image */
-    background-image: url("images/bg-intro-desktop.png");
-    background-repeat: repeat;
-    min-height: 100vh;
+  /* Background Image */
+  background-image: url("images/bg-intro-desktop.png");
+  background-repeat: repeat;
+  min-height: 100vh;
 }
 
-.cta-1 {
-    background-color: var(--blue);
-    padding: 1rem;
-    border-radius: 8px;
-    border-bottom: solid 6px #342d61;
-
-}
-
-.cta-1>span:first-child {
-    font-weight: 700;
+.cta-1 > span:first-child {
+  font-weight: 700;
 }
 
 a {
-    color: var(--red);
+  color: var(--red);
 }
 
 form {
-    background-color: white;
-    color: var(--dark-blue);
-    height: max-content;
+  background-color: white;
+  color: var(--dark-blue);
+  height: max-content;
 
-    /* Layout */
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.3rem;
-    max-width: 512px;
-    border-radius: 12px;
-    border-bottom: solid 6px #de5858;
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 16px;
+  border-radius: 12px;
+  border-bottom: solid 6px #de5858;
 }
 
 form p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 /* MObile only */
-h1, p {
-    text-align: center;
+h1,
+p {
+  text-align: center;
 }
 
-form>div {
-    display: flex;
-    flex-direction: column;
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+article > p {
+  font-size: 16px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-    all: unset;
-    outline: solid 1px var(--grayish-blue);
-    padding: 1rem;
-    border-radius: 6px;
+  all: unset;
+  outline: solid 1px var(--grayish-blue);
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 input::placeholder {
-    color: black;
-    font-weight: 600;
+  color: black;
+  font-weight: 600;
 }
 
 input:invalid {
-    outline: solid 1px var(--red);
+  outline: solid 1px var(--red);
 }
 
 input:invalid::after {
-    background-image: url("./images/icon-error.svg");
+  background-image: url("./images/icon-error.svg");
 }
 
 button {
-    all: unset;
-    background-color: var(--green);
-    border-bottom: solid 4px #268f61;
-    color: white;
-    padding: 1rem;
-    border-radius: 6px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
+  all: unset;
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
 }
 
+form button {
+  font-weight: 600;
+  background-color: var(--green);
+  border-bottom: solid 4px #268f61;
+  text-transform: uppercase;
+}
+
+.cta-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+  padding: 1rem;
+  border-radius: 8px;
+  border-bottom: solid 6px #342d61;
+}
+
+/* Desktop overrides */
 @media (min-width: 640px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .cta-1 {
+    display: inline-block;
+  }
 
-    h1, p {
-        text-align: left;
-    }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1100px;
+  }
 
-    article {
-        min-height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  h1,
+  p {
+    text-align: left;
+  }
+
+  form {
+    padding: 40px;
+  }
+
+  form p {
+    text-align: center;
+  }
+
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  article h1 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.5px;
+  }
+
+  article p {
+    margin: unset;
+  }
 }
